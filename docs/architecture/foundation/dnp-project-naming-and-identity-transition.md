@@ -59,18 +59,26 @@ The company line remains:
 
 ## Repository Identity
 
-The existing repository remains:
+The canonical repository is:
+
+```text
+Iron-Signal-Systems/domain-neutral-platform
+```
+
+The repository was renamed from:
 
 ```text
 Iron-Signal-Systems/iron-signal-platform
 ```
 
-This branding change does not rename the GitHub repository, local checkout,
-Git remote, Go module path, deployment paths, or automation references.
+The repository rename became effective on 2026-07-26.
 
-A repository rename is a separate governed change because it affects clone URLs,
-developer workstations, documentation, CI/CD, deployment tooling, release
-automation, integrations, and external references.
+Active clone instructions, Git remotes, Go module paths, CI/CD
+configuration, deployment tooling, and current documentation must use
+the canonical repository name.
+
+Validated technical identifiers, accepted tags, and historical records
+remain unchanged unless migrated through a separately governed change.
 
 ## Historical Integrity
 

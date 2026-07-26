@@ -1,4 +1,4 @@
-module github.com/Iron-Signal-Systems/iron-signal-platform/go/platform
+module github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform
 
 go 1.26.0
 

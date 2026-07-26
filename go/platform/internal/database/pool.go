@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/config"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/config"
 	"github.com/jackc/pgx/v5/pgconn"
 	"github.com/jackc/pgx/v5/pgxpool"
 )

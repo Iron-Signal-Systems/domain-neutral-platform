@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/config"
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/database"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/config"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/database"
 )
 
 type integrationStore interface {

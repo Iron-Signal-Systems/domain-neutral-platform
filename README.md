@@ -24,7 +24,7 @@
 Canonical repository:
 
 ```text
-https://github.com/Iron-Signal-Systems/iron-signal-platform
+https://github.com/Iron-Signal-Systems/domain-neutral-platform
 ```
 
 ## Project Identity
@@ -32,11 +32,12 @@ https://github.com/Iron-Signal-Systems/iron-signal-platform
 **DNP** is the canonical project and product name. Its expansion is
 **Domain-Neutral Platform**. DNP is an Iron Signal Systems project.
 
-This project-identity change is intentionally separate from technical-identifier
-migration. The repository path, accepted tags, historical evidence, `issp_*`
+The GitHub repository and Go module path now use the canonical DNP repository
+identity. This repository-name migration remains separate from migration of
+validated technical identifiers. Accepted tags, historical records, `issp_*`
 database and deployment identifiers, service names, schema-version identifiers,
-and phase-gate contracts remain unchanged unless a separately governed migration
-explicitly changes them.
+and other frozen contracts remain unchanged unless a separately governed
+migration explicitly changes them.
 
 See [DNP Project Naming and Identity Transition](docs/architecture/foundation/dnp-project-naming-and-identity-transition.md).
 

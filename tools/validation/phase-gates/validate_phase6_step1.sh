@@ -105,7 +105,7 @@ fi
 
 origin_url="$(git remote get-url origin 2>/dev/null || true)"
 case "$origin_url" in
-    git@github.com:Iron-Signal-Systems/iron-signal-platform.git|https://github.com/Iron-Signal-Systems/iron-signal-platform.git)
+    git@github.com:Iron-Signal-Systems/domain-neutral-platform.git|https://github.com/Iron-Signal-Systems/domain-neutral-platform.git)
         pass "Canonical Iron Signal Systems origin configured"
         ;;
     *)

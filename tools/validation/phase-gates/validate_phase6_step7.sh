@@ -13,7 +13,7 @@ repo_root="$(git rev-parse --show-toplevel 2>/dev/null || true)"
 cd "$repo_root"
 
 predecessor_commit="ec3c36081c686fa8ec82c8fd94bda421ed6cff42"
-canonical_origin="git@github.com:Iron-Signal-Systems/iron-signal-platform.git"
+canonical_origin="git@github.com:Iron-Signal-Systems/domain-neutral-platform.git"
 pass_count=0
 fail_count=0
 scratch="$(mktemp -d "${TMPDIR:-/tmp}/issp-phase6-step7-gate.XXXXXX")"

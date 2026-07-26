@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/authentication"
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/foundation"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/authentication"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/foundation"
 )
 
 const (

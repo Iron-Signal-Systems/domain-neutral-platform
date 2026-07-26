@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 repo_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/../../.." && pwd -P)"
 predecessor_commit="3e15c8cbb7b666537be6a7ec832800e8f4ca9af0"
-canonical_origin="git@github.com:Iron-Signal-Systems/iron-signal-platform.git"
+canonical_origin="git@github.com:Iron-Signal-Systems/domain-neutral-platform.git"
 static_only=false
 
 if [[ "${1:-}" == "--static-only" ]]; then

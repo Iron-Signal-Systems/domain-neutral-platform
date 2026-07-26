@@ -15,8 +15,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/authentication"
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/foundation"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/authentication"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/foundation"
 )
 
 var businessTestKey = []byte("0123456789abcdef0123456789abcdef")

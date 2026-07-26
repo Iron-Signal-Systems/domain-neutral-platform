@@ -5,7 +5,7 @@ script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
 module_root="$(cd -- "$script_dir/.." && pwd -P)"
 output_root="${1:-$module_root/dist}"
 required_go="$(tr -d '[:space:]' <"$module_root/TOOLCHAIN")"
-module_path="github.com/Iron-Signal-Systems/iron-signal-platform/go/platform"
+module_path="github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform"
 
 for command_name in go git sha256sum awk; do
     command -v "$command_name" >/dev/null 2>&1 || {
