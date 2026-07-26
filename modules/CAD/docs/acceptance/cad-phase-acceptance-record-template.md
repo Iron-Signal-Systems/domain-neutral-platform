@@ -44,7 +44,7 @@ State what this record does not prove.
 
 | Field | Value |
 |---|---|
-| Repository | `Iron-Signal-Systems/iron-signal-platform` |
+| Repository | `Iron-Signal-Systems/domain-neutral-platform` |
 | Branch | |
 | Commit | |
 | Tag | |

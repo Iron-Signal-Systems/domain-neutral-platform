@@ -6,8 +6,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/bootstrap"
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/database"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/bootstrap"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/database"
 )
 
 func main() {

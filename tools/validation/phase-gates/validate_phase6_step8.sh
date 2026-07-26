@@ -13,7 +13,7 @@ repo_root="$(git rev-parse --show-toplevel 2>/dev/null || true)"
 cd "$repo_root"
 
 predecessor_commit="79e9723b2dd12e813de8a8c665d08d4f61cc8fab"
-canonical_origin="git@github.com:Iron-Signal-Systems/iron-signal-platform.git"
+canonical_origin="git@github.com:Iron-Signal-Systems/domain-neutral-platform.git"
 results_dir="${TMPDIR:-/tmp}/phase-6-step-8-results"
 pass_count=0
 fail_count=0

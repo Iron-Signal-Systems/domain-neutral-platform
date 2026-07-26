@@ -17,7 +17,7 @@
 ## Module
 
 ```text
-github.com/Iron-Signal-Systems/iron-signal-platform/go/platform
+github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform
 ```
 
 The module requires Go 1.26 semantics. `go.mod` names the upstream toolchain

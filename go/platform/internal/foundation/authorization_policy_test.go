@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/database"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/database"
 )
 
 const testDecisionID = "123e4567-e89b-12d3-a456-426614174000"

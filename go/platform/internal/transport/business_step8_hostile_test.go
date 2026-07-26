@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/foundation"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/foundation"
 )
 
 func TestPhase6Step8DuplicateAuthenticationHeadersFailClosed(t *testing.T) {

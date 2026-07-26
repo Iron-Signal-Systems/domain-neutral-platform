@@ -15,8 +15,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/config"
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/database"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/config"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/database"
 )
 
 func TestPhase6Step8HostileDeliveryRuntime(t *testing.T) {

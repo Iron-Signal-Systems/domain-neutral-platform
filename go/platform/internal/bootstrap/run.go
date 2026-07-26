@@ -9,14 +9,14 @@ import (
 	"os"
 	"time"
 
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/authentication"
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/config"
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/database"
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/foundation"
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/observability"
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/processhost"
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/transport"
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/workers"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/authentication"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/config"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/database"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/foundation"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/observability"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/processhost"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/transport"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/workers"
 )
 
 const (

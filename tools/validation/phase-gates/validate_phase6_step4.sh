@@ -94,7 +94,7 @@ cleanup() {
 }
 trap cleanup EXIT
 
-canonical_origin="git@github.com:Iron-Signal-Systems/iron-signal-platform.git"
+canonical_origin="git@github.com:Iron-Signal-Systems/domain-neutral-platform.git"
 
 if git clone -q --no-hardlinks "$repo_root" "$scratch/predecessor"; then
     (
@@ -191,7 +191,7 @@ mapfile -t service_units < <(
 
 require_text \
     go/platform/internal/bootstrap/run.go \
-    '"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/processhost"' \
+    '"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/processhost"' \
     "Bootstrap imports only the bounded process-host package"
 require_text \
     go/platform/internal/bootstrap/run.go \

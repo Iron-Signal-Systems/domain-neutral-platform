@@ -108,7 +108,7 @@ check_equal "$(git branch --show-current)" "dev" "Current branch"
 origin_url="$(git remote get-url origin 2>/dev/null || true)"
 check_equal \
     "$origin_url" \
-    "git@github.com:Iron-Signal-Systems/iron-signal-platform.git" \
+    "git@github.com:Iron-Signal-Systems/domain-neutral-platform.git" \
     "Canonical origin"
 
 tag="phase-4-approval-independence-and-separation-of-duties-complete-v1"

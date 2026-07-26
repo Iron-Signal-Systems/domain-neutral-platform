@@ -1,6 +1,6 @@
 [Unit]
 Description=Iron Signal Platform Integration Delivery Worker
-Documentation=https://github.com/Iron-Signal-Systems/iron-signal-platform
+Documentation=https://github.com/Iron-Signal-Systems/domain-neutral-platform
 Wants=network-online.target
 After=network-online.target
 StartLimitIntervalSec=60s

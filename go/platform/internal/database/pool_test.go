@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/Iron-Signal-Systems/iron-signal-platform/go/platform/internal/config"
+	"github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform/internal/config"
 )
 
 func TestValidateDatabaseURLBindsExactRole(t *testing.T) {

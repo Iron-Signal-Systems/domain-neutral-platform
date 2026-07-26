@@ -68,7 +68,7 @@ phase5_tag="phase-5-production-database-security-boundary-complete-v1"
 phase5_commit="9f8dbf9d909ef157df72b12511b165a689559093"
 step1_commit="77f9ead23f5275e97989ea8c59b0c9c44f0c5a0b"
 module_root="go/platform"
-module_path="github.com/Iron-Signal-Systems/iron-signal-platform/go/platform"
+module_path="github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform"
 required_go="$(tr -d '[:space:]' <"$module_root/TOOLCHAIN")"
 
 printf 'Dependency preflight: PASS\n'
@@ -130,7 +130,7 @@ fi
 
 origin_url="$(git remote get-url origin 2>/dev/null || true)"
 case "$origin_url" in
-    git@github.com:Iron-Signal-Systems/iron-signal-platform.git|https://github.com/Iron-Signal-Systems/iron-signal-platform.git)
+    git@github.com:Iron-Signal-Systems/domain-neutral-platform.git|https://github.com/Iron-Signal-Systems/domain-neutral-platform.git)
         pass "Canonical Iron Signal Systems origin configured"
         ;;
     *)

@@ -62,7 +62,7 @@ phase5_tag="phase-5-production-database-security-boundary-complete-v1"
 phase5_commit="9f8dbf9d909ef157df72b12511b165a689559093"
 step2_commit="2c154e4f7e7cbb050c39f8ff99d132fae8c90658"
 module_root="go/platform"
-module_path="github.com/Iron-Signal-Systems/iron-signal-platform/go/platform"
+module_path="github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform"
 required_go="$(tr -d '[:space:]' <"$module_root/TOOLCHAIN" 2>/dev/null || true)"
 
 printf 'Dependency preflight: PASS\n'
@@ -132,7 +132,7 @@ fi
 
 origin_url="$(git remote get-url origin 2>/dev/null || true)"
 case "$origin_url" in
-    git@github.com:Iron-Signal-Systems/iron-signal-platform.git|https://github.com/Iron-Signal-Systems/iron-signal-platform.git)
+    git@github.com:Iron-Signal-Systems/domain-neutral-platform.git|https://github.com/Iron-Signal-Systems/domain-neutral-platform.git)
         pass "Canonical Iron Signal Systems origin configured"
         ;;
     *)
@@ -209,7 +209,7 @@ fi
 
 expected_modules="$(cat <<'MODULES'
 github.com/davecgh/go-spew v1.1.1
-github.com/Iron-Signal-Systems/iron-signal-platform/go/platform
+github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform
 github.com/jackc/pgpassfile v1.0.0
 github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761
 github.com/jackc/pgx/v5 v5.10.0

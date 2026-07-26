@@ -113,7 +113,7 @@ pass "Repository is a Git work tree"
 check_equal "$(git branch --show-current)" "dev" "Current branch"
 check_equal \
     "$(git remote get-url origin 2>/dev/null || true)" \
-    "git@github.com:Iron-Signal-Systems/iron-signal-platform.git" \
+    "git@github.com:Iron-Signal-Systems/domain-neutral-platform.git" \
     "Canonical origin"
 
 tag="phase-4-approval-independence-and-separation-of-duties-complete-v1"

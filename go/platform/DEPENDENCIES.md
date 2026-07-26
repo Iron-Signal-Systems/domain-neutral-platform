@@ -44,7 +44,7 @@ The exact module build list accepted by the Step 3 gate is:
 
 ```text
 github.com/davecgh/go-spew v1.1.1
-github.com/Iron-Signal-Systems/iron-signal-platform/go/platform
+github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform
 github.com/jackc/pgpassfile v1.0.0
 github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761
 github.com/jackc/pgx/v5 v5.10.0
