@@ -1,10 +1,17 @@
 # DNP Documentation
 
+<!-- dnp-current-governed-status:start -->
+## Current Governed Project Status
+
+- Accepted database boundary: Phase 5 at `phase-5-production-database-security-boundary-complete-v1`, commit `9f8dbf9d909ef157df72b12511b165a689559093`.
+- Accepted production Go boundary: Phase 6 Step 7 at `79e9723b2dd12e813de8a8c665d08d4f61cc8fab`; static and complete validation each reported 142 PASS and 0 FAIL.
+- Phase 6 Step 8: **rebaseline required** after the governed DNP repository rename and CAD extraction changed paths frozen by the original candidate. Acceptance is not claimed, and the historical candidate gate is not a current acceptance gate.
+- Module ownership: CAD and other domain modules are maintained in the Module Families repository.
+- Machine-readable authority: `docs/project-status.json`.
+<!-- dnp-current-governed-status:end -->
 > **Owner:** Iron Signal Systems
 >
-> **Current status:** Phase 6 Step 8 Hostile, Failure, Concurrency, and Resource
-> Validation implementation candidate; Phase 6 Step 7 is the newest accepted
-> production Go implementation checkpoint
+> **Current status:** Phase 6 Step 8 requires a governed rebaseline; acceptance is not claimed.
 >
 > **Accepted database-security tag:**
 > `phase-5-production-database-security-boundary-complete-v1`
@@ -14,6 +21,10 @@
 ## Start Here
 
 - [Repository Overview](../README.md)
+- [Machine-Readable Project Status](project-status.json)
+- [Repository Boundary Synchronization](architecture/foundation/repository-boundary-synchronization.md)
+- [Module Family Repository Integration](architecture/foundation/module-family-repository-integration.md)
+- [Module Migration Documentation Review](module-migration-drift-report.md)
 - [DNP Project Naming and Identity Transition](architecture/foundation/dnp-project-naming-and-identity-transition.md)
 - [Architecture Index](architecture/README.md)
 - [Platform Foundation Documentation](architecture/foundation/README.md)
@@ -143,7 +154,7 @@ Active gate:
 ./tools/validation/phase-gates/validate_phase5_step1.sh
 ```
 
-## Accepted Phase 5 Step 2
+## Historical Phase 5 Step 2
 
 Phase 5 Step 2 implements the separate deployment tree and canonical
 PostgreSQL role topology while preserving the accepted Phase 4 `sql/schema`
@@ -171,23 +182,22 @@ No direct protected relation grants are introduced.
 
 <!-- ISSP_PHASE5_STEP5_REVIEW_AND_VALIDATION_ROLES -->
 
-## Phase 5 Step 5 — Review and Validation Roles
+## Historical Phase 5 Step 5 — Review and Validation Roles
 
-Phase 5 Step 5 implements separate `NOLOGIN` investigator, audit-reader, and validation-reader capabilities through an exact 40-row view-only privilege contract. The implementation adds two reduced-disclosure investigator views, eight audit-lineage views, and 23 validation-posture views. No review role receives direct protected base-table, sequence, mutation, routine-execution, schema-creation, or temporary-object authority. Phase 5 Step 6 may implement disabled-at-rest break-glass activation and credential lifecycle controls.
+Phase 5 Step 5 implements separate `NOLOGIN` investigator, audit-reader, and validation-reader capabilities through an exact 40-row view-only privilege contract. The implementation adds two reduced-disclosure investigator views, eight audit-lineage views, and 23 validation-posture views. No review role receives direct protected base-table, sequence, mutation, routine-execution, schema-creation, or temporary-object authority. Phase 5 Step 6 subsequently implemented disabled-at-rest break-glass activation and credential lifecycle controls.
 
-## Phase 5 Step 6 Implementation Status
+## Historical Phase 5 Step 6 — Break-Glass and Credential Lifecycle
 
-Phase 5 Step 6 implements disabled-at-rest `issp_break_glass` activation,
+Phase 5 Step 6 implemented disabled-at-rest `issp_break_glass` activation,
 independent approval evidence, bounded expiration, forced deactivation,
 append-only emergency evidence, off-host-export requirements, and external
 credential lifecycle policy through deployment migration
 `940_break_glass_and_credential_lifecycle.sql`. Credentials, private keys,
-tokens, and passwords remain outside the repository and database. Phase 5 Step
-7 may perform hostile-condition and role-race validation.
+tokens, and passwords remain outside the repository and database. Phase 5 Step 7 subsequently performed hostile-condition and role-race validation.
 
-## Phase 5 Step 7 — Hostile-Condition and Role-Race Validation
+## Historical Phase 5 Step 7 — Hostile-Condition and Role-Race Validation
 
-Phase 5 Step 7 adds hostile-input and PostgreSQL role-race validation plus one pre-freeze hardening correction to deployment migration `940_break_glass_and_credential_lifecycle.sql`: an activated SCRAM verifier must use at least 4096 iterations and cryptographically match the independently approved fingerprint. It introduces no new deployment migration or authority. Concurrent preparation, activation, live-session deactivation, use-versus-closure, and expiration-versus-deactivation must remain deterministic, attributable, and fail-closed before Phase 5 formal acceptance.
+Phase 5 Step 7 added hostile-input and PostgreSQL role-race validation plus one pre-freeze hardening correction to deployment migration `940_break_glass_and_credential_lifecycle.sql`: an activated SCRAM verifier must use at least 4096 iterations and cryptographically match the independently approved fingerprint. It introduces no new deployment migration or authority. Concurrent preparation, activation, live-session deactivation, use-versus-closure, and expiration-versus-deactivation must remain deterministic, attributable, and fail-closed before Phase 5 formal acceptance was recorded.
 
 ## Accepted Phase 5 — Production Database Security Boundary
 
@@ -206,28 +216,34 @@ and the
 [Step 1 contract record](architecture/backend-services/phase-6-step-1-production-go-service-contract.md).
 
 <!-- phase-6-step-2-status:start -->
-## Phase 6 Step 2 — Production Go Workspace and Reproducible Build Baseline
+## Historical Phase 6 Step 2 — Production Go Workspace and Reproducible Build Baseline
 
-The production module now exists at `go/platform/` with three fail-closed
-bounded executable skeletons, the exact `go1.26.5` toolchain, zero third-party
-modules, deterministic build controls, and a validation gate. No listener,
-database connection, credential, protected operation, or worker loop exists.
+At the Step 2 checkpoint, the first production Go module existed at
+`go/platform/` with three fail-closed executable skeletons, the exact
+`go1.26.5` toolchain, zero third-party modules, and deterministic build
+controls. No listener, database connection, credential, protected operation,
+or worker loop existed at that checkpoint.
+
+- [Phase 6 Step 2 Production Go Workspace and Build Baseline](architecture/backend-services/phase-6-step-2-production-go-workspace-and-build-baseline.md)
 <!-- phase-6-step-2-status:end -->
 
 <!-- phase-6-step-3-status:start -->
-## Phase 6 Step 3 — Runtime Bootstrap and Bounded PostgreSQL Connectivity
+## Historical Phase 6 Step 3 — Runtime Bootstrap and Bounded PostgreSQL Connectivity
 
-The three production Go processes now have typed fail-closed configuration,
-protected-file PostgreSQL URL loading, exact service-role verification, bounded
-pgx pools, PostgreSQL 18 compatibility checks, loopback-only health/readiness,
-context cancellation, and graceful shutdown. No protected business operation,
-business listener, migration, or durable worker loop is implemented.
+At the Step 3 checkpoint, the three production Go processes had typed
+fail-closed configuration, protected-file PostgreSQL URL loading, exact
+service-role verification, bounded pgx pools, PostgreSQL 18 compatibility
+checks, loopback-only health/readiness, context cancellation, and graceful
+shutdown. Protected business operations and durable worker loops remained
+absent at that checkpoint.
 
-Active gate:
+Historical gate:
 
 ```bash
 ./tools/validation/phase-gates/validate_phase6_step3.sh
 ```
+
+- [Phase 6 Step 3 Runtime Bootstrap and PostgreSQL Connectivity](architecture/backend-services/phase-6-step-3-runtime-bootstrap-and-postgresql-connectivity.md)
 <!-- phase-6-step-3-status:end -->
 
 <!-- phase-6-step-4-status:start -->
@@ -268,7 +284,7 @@ identities and six controlled database operations.
 
 ## Phase 6 Step 8 — Hostile, Failure, Concurrency, and Resource Validation
 
-Step 8 is the active validation-only candidate. It exercises replay capacity,
+Step 8 requires a governed rebaseline; acceptance is not claimed. It exercises replay capacity,
 transport limits, adapter lock cancellation, relay failures, cross-role denial,
 claim lease recovery, completion races, repeated race tests, and
 observation-only resource telemetry.

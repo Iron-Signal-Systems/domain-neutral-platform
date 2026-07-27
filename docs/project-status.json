@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "project": {
+    "name": "DNP",
+    "expanded_name": "Domain-Neutral Platform",
+    "owner": "Iron Signal Systems",
+    "repository": "https://github.com/Iron-Signal-Systems/domain-neutral-platform",
+    "default_branch": "dev",
+    "development_status": "pre-alpha",
+    "production_ready": false
+  },
+  "branding": {
+    "primary_asset": "docs/assets/branding/dnp-foundation-crest.png",
+    "retired_asset": "docs/assets/branding/dnp-platform-badge.png"
+  },
+  "repository_boundary": {
+    "foundation_owner": "DNP",
+    "module_repository": "https://github.com/Iron-Signal-Systems/module-families",
+    "module_import_revision": "1e017c7ab874969395fb31e030c0149116bf77cf",
+    "local_modules_allowed": false,
+    "migrated_modules": [
+      "cad"
+    ]
+  },
+  "accepted_database_boundary": {
+    "phase": 5,
+    "name": "Production Database Security Boundary",
+    "tag": "phase-5-production-database-security-boundary-complete-v1",
+    "revision": "9f8dbf9d909ef157df72b12511b165a689559093"
+  },
+  "accepted_go_boundary": {
+    "phase": 6,
+    "step": 7,
+    "name": "Integration and Monitoring Delivery Workers",
+    "revision": "79e9723b2dd12e813de8a8c665d08d4f61cc8fab",
+    "static_validation": {
+      "pass": 142,
+      "fail": 0
+    },
+    "complete_validation": {
+      "pass": 142,
+      "fail": 0
+    }
+  },
+  "active_candidate": {
+    "phase": 6,
+    "step": 8,
+    "name": "Hostile, Failure, Concurrency, and Resource Validation",
+    "status": "rebaseline_required",
+    "validation_only": true,
+    "acceptance_claimed": false,
+    "gate_runnable_against_current_dev": false,
+    "accepted_predecessor": "79e9723b2dd12e813de8a8c665d08d4f61cc8fab",
+    "reason": "governed repository identity migration and CAD extraction changed paths frozen by the original Step 8 candidate"
+  },
+  "next_go_step": {
+    "phase": 6,
+    "step": 8,
+    "purpose": "inventory and revalidate post-Step7 repository identity and module extraction changes, establish a governed baseline, then resume hostile validation"
+  },
+  "remaining_work": [
+    "additional controlled Foundation API operations after separate review",
+    "rebaseline and complete Phase 6 Step 8 hostile and resource validation",
+    "Decision Record cryptographic integrity anchoring",
+    "stronger append-only mutation protection where required",
+    "migration-checksum population and enforcement",
+    "Trust-Provider-specific verifier and credential boundaries",
+    "external-system adapters",
+    "off-host integrity anchoring and protected logging",
+    "backup protection and restoration validation",
+    "trusted rebuild and compromise recovery",
+    "shared resources and additional operational modules"
+  ]
+}

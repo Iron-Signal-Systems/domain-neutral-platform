@@ -1,5 +1,14 @@
 # Backend Services Architecture
 
+<!-- dnp-current-governed-status:start -->
+## Current Governed Project Status
+
+- Accepted database boundary: Phase 5 at `phase-5-production-database-security-boundary-complete-v1`, commit `9f8dbf9d909ef157df72b12511b165a689559093`.
+- Accepted production Go boundary: Phase 6 Step 7 at `79e9723b2dd12e813de8a8c665d08d4f61cc8fab`; static and complete validation each reported 142 PASS and 0 FAIL.
+- Phase 6 Step 8: **rebaseline required** after the governed DNP repository rename and CAD extraction changed paths frozen by the original candidate. Acceptance is not claimed, and the historical candidate gate is not a current acceptance gate.
+- Module ownership: CAD and other domain modules are maintained in the Module Families repository.
+- Machine-readable authority: `docs/project-status.json`.
+<!-- dnp-current-governed-status:end -->
 > **Status:** Architecture area under active refinement.
 
 ## Documents
@@ -27,22 +36,34 @@ Service documents define ownership, interfaces, state, failure behavior, persist
 Step 1 is the historical contract-freeze checkpoint. The production workspace was created in Step 2.
 
 <!-- phase-6-step-2-status:start -->
-## Phase 6 Step 2 — Production Go Workspace and Reproducible Build Baseline
+## Historical Phase 6 Step 2 — Production Go Workspace and Reproducible Build Baseline
 
-The production module now exists at `go/platform/` with three fail-closed
-bounded executable skeletons, the exact `go1.26.5` toolchain, zero third-party
-modules, deterministic build controls, and a validation gate. No listener,
-database connection, credential, protected operation, or worker loop exists.
+At the Step 2 checkpoint, the first production Go module existed at
+`go/platform/` with three fail-closed executable skeletons, the exact
+`go1.26.5` toolchain, zero third-party modules, and deterministic build
+controls. No listener, database connection, credential, protected operation,
+or worker loop existed at that checkpoint.
+
+- [Phase 6 Step 2 Production Go Workspace and Build Baseline](phase-6-step-2-production-go-workspace-and-build-baseline.md)
 <!-- phase-6-step-2-status:end -->
 
 <!-- phase-6-step-3-status:start -->
-## Phase 6 Step 3 — Runtime Bootstrap and Bounded PostgreSQL Connectivity
+## Historical Phase 6 Step 3 — Runtime Bootstrap and Bounded PostgreSQL Connectivity
+
+At the Step 3 checkpoint, the three production Go processes had typed
+fail-closed configuration, protected-file PostgreSQL URL loading, exact
+service-role verification, bounded pgx pools, PostgreSQL 18 compatibility
+checks, loopback-only health/readiness, context cancellation, and graceful
+shutdown. Protected business operations and durable worker loops remained
+absent at that checkpoint.
+
+Historical gate:
+
+```bash
+./tools/validation/phase-gates/validate_phase6_step3.sh
+```
 
 - [Phase 6 Step 3 Runtime Bootstrap and PostgreSQL Connectivity](phase-6-step-3-runtime-bootstrap-and-postgresql-connectivity.md)
-
-Step 3 implements only configuration, secret consumption, exact database
-identity and compatibility checks, local administrative health/readiness, and
-graceful lifecycle behavior. Protected operations remain absent.
 <!-- phase-6-step-3-status:end -->
 
 <!-- phase-6-step-4-status:start -->

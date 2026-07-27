@@ -18,10 +18,18 @@ The DNP repository must not contain:
 
 ## Branding
 
-The root README selects the current DNP crest or badge through its image path.
-The selected file must exist inside `docs/assets/branding/`, be a valid PNG,
+The root README selects the current DNP branding asset through its image path.
+The selected crest must exist inside `docs/assets/branding/`, be a valid PNG,
 and have usable dimensions. Branding changes do not change accepted technical
 identifiers, tags, or historical commits.
+
+
+## Project Status Registry
+
+Current project status is recorded in `docs/project-status.json`. The registry
+must agree with the root README, documentation indexes, accepted Phase 5 tag
+and commit, accepted Phase 6 Step 7 commit and validation counts, Step 8
+rebaseline-required status, branding asset, and Module Families boundary.
 
 ## Validation
 
@@ -29,6 +37,7 @@ identifiers, tags, or historical commits.
 ./tools/validation/check_repository_sync.sh
 ```
 
-The check validates the repository layout, branding asset, immutable Module
-Families integration pin, external CAD references, and accepted Phase 4 gate
-synchronization.
+The check validates the repository layout, branding asset, machine-readable
+project status, immutable Module Families integration pin, external CAD
+references, accepted Phase 4 gate synchronization, and current phase-status
+semantics.

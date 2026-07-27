@@ -1,8 +1,18 @@
 # DNP Foundation Documentation
 
+<!-- dnp-current-governed-status:start -->
+## Current Governed Project Status
+
+- Accepted database boundary: Phase 5 at `phase-5-production-database-security-boundary-complete-v1`, commit `9f8dbf9d909ef157df72b12511b165a689559093`.
+- Accepted production Go boundary: Phase 6 Step 7 at `79e9723b2dd12e813de8a8c665d08d4f61cc8fab`; static and complete validation each reported 142 PASS and 0 FAIL.
+- Phase 6 Step 8: **rebaseline required** after the governed DNP repository rename and CAD extraction changed paths frozen by the original candidate. Acceptance is not claimed, and the historical candidate gate is not a current acceptance gate.
+- Module ownership: CAD and other domain modules are maintained in the Module Families repository.
+- Machine-readable authority: `docs/project-status.json`.
+<!-- dnp-current-governed-status:end -->
 > **Current cross-boundary status:** Phase 5 production database security
 > boundary formally accepted; Phase 6 Steps 3 through 7 production Go
-> checkpoints accepted; Phase 6 Step 8 validation-only candidate active.
+> checkpoints accepted; Phase 6 Step 8 requires a governed rebaseline;
+> acceptance is not claimed.
 >
 > **Boundary:** This Foundation index records downstream consumption
 > status without moving service-host, transport, or module behavior into
@@ -264,42 +274,64 @@ See:
 
 ## Current Implementation Boundaries
 
-The `000–099` migrations establish the initial Foundation data model,
-controlled APIs, security inventories, validation views, and the formally
-accepted Phase 4 approval-independence and separation-of-duties behavior.
+The Foundation SQL and deployment boundaries are current through formal Phase 5
+acceptance. Production Go consumption is current through accepted Phase 6 Step
+7. Phase 6 Step 8 requires a governed rebaseline; acceptance is not claimed.
 
-The accepted Phase 4 concurrency enforcement applies only to governed approval
-state. It does not add CAD records, mapping state, workstation state,
-presentation state, transport state, or module-owned workflows to the
+The Foundation remains domain-neutral. CAD, RMS, workstation, interface,
+mapping, and other domain-specific records and workflows remain in Module
+Families.
+
+## Accepted Phase 5 Production Database Security Boundary
+
+Phase 5 is formally accepted at:
+
+```text
+phase-5-production-database-security-boundary-complete-v1
+```
+
+The accepted implementation targets `9f8dbf9d909ef157df72b12511b165a689559093` and includes production
+role topology, ownership, least-privileged runtime grants, controlled service
+APIs, investigation and validation roles, disabled-at-rest break-glass,
+credential lifecycle controls, and hostile-condition role-race validation.
+
+- [Phase 5 Production Database Security Boundary Acceptance](phase-5-production-database-security-boundary-acceptance.md)
+
+## Accepted Phase 6 Step 7 Downstream Consumption Boundary
+
+Phase 6 Step 7 is accepted at `79e9723b2dd12e813de8a8c665d08d4f61cc8fab` with 142 PASS and 0 FAIL
+in both static and complete validation. The Go layer consumes accepted
+Foundation decisions through bounded process identities, controlled database
+operations, authenticated transport, and two service-specific delivery workers.
+It does not move service-host, transport, or module behavior into the
 Foundation.
 
-The following remain incomplete until separately implemented and tested:
+- [Phase 6 Step 7 Integration and Monitoring Delivery Workers](../backend-services/phase-6-step-7-integration-and-monitoring-delivery-workers.md)
 
-- Complete Decision Record cryptographic integrity and later
-  review/supersession controls,
-- Final production ownership and login-role topology,
-- Least-privileged runtime grants and controlled write paths,
-- Full append-only mutation protection,
-- Migration-checksum population and enforcement,
-- Production Go services,
-- External-System Adapters and delivery workers,
-- Off-host integrity anchoring and protected export,
-- Backup protection and restoration validation,
-- Break-glass procedures,
+## Phase 6 Step 8 — Rebaseline Required
+
+Step 8 adds hostile, failure, concurrency, redaction, privilege, lease-race, and
+observation-only resource validation. Acceptance is not yet claimed, and the
+accepted production boundary remains frozen at Step 7.
+
+- [Phase 6 Step 8 Hostile, Failure, Concurrency, and Resource Validation](../backend-services/phase-6-step-8-hostile-failure-concurrency-and-resource-validation.md)
+
+## Remaining Foundation and Platform Work
+
+The following remain incomplete until separately implemented, validated, and
+accepted:
+
+- Complete Decision Record cryptographic integrity and later review or
+  supersession controls.
+- Stronger append-only mutation protection where required.
+- Migration-checksum population and enforcement.
+- Trust-Provider-specific verifier-role and credential boundaries.
+- Additional controlled Foundation API operations after separate review.
+- External-System Adapters beyond the accepted delivery-worker boundary.
+- Off-host integrity anchoring and protected export.
+- Backup protection and restoration validation.
 - Trusted rebuild and compromise recovery.
-
-## Active Phase 5 Boundary
-
-Phase 5 Step 1 freezes the production database role, ownership, migration,
-runtime privilege, investigation, audit, validation, default-privilege, and
-break-glass contract.
-
-No production role SQL, ownership transfer, or runtime grant is introduced in
-Step 1. The accepted Phase 4 SQL and executable test tree remain unchanged.
-
-See:
-
-- [Production Database Role, Ownership, and Runtime Privilege Model](production-database-role-ownership-and-runtime-privilege-model.md)
+- Shared Resources and additional operational modules.
 
 ## Foundation Migration Execution Contract
 
@@ -314,110 +346,28 @@ SET LOCAL idle_in_transaction_session_timeout = '1min';
 
 Ordinary DDL should finish within a few seconds. An individual statement
 observed above ten seconds requires investigation. The one-minute statement
-limit is a hard execution-safety ceiling, not an expected duration and not a
-general performance-regression budget.
-
-The static contract validator is:
+limit is a hard execution-safety ceiling, not an expected duration or a general
+performance-regression budget.
 
 ```bash
 ./tools/validation/validate_foundation_migration_timeouts.sh
 ```
 
-The Phase 4 formal-acceptance gate invokes the validator before database execution.
-It remains independently runnable for focused migration review.
-
-See [Foundation Migration Timeout and Execution Performance Standard](foundation-migration-timeout-and-execution-performance-standard.md).
-
 ## Change Discipline
 
 A Foundation change should normally update:
 
-1. The governing architecture document,
-2. The applicable SQL migration or a new migration,
-3. The authoritative manifest when migration order changes,
-4. The SQL migration map,
-5. Positive and negative automated tests,
-6. Concurrency tests when state can be consumed or changed simultaneously,
-7. Operational or deployment documentation when the change crosses the
-   database boundary.
+1. The governing architecture document.
+2. The applicable SQL migration or a new migration.
+3. The authoritative manifest when migration order changes.
+4. The SQL migration map.
+5. Positive and negative automated tests.
+6. Concurrency tests when state can be consumed or changed simultaneously.
+7. Operational or deployment documentation when the change crosses the database
+   boundary.
+8. `docs/project-status.json` and the current documentation indexes when project
+   status changes.
 
-## Phase 3 Step 3 Controlled Decision Finalization
-
-Step 3 extends migration `081` with deterministic policy resolution,
-controlled policy binding, complete policy-stage closure, policy-backed
-`NOT_REQUIRED`, required supporting-evidence checks, finalization-once
-behavior, and rejection of caller-supplied result mismatches.
-
-The Step 3 regression target is 33 migrations, 14 sequential tests, 4
-concurrency tests, 297 passes, zero failures, and the same three understood
-warnings. Authorization Lease issuance remains Step 4.
-
-## Accepted Phase 4 Approval Boundary
-
-Phase 4 is formally accepted at `phase-4-approval-independence-and-separation-of-duties-complete-v1` with 34 manifest migrations,
-21 sequential tests, 16 concurrency tests, 734 PASS, 0 FAIL, and the same
-three understood WARN results.
-
-The active revalidation gate is:
-
-```bash
-./tools/validation/phase-gates/validate_phase4_step8.sh
-```
-
-The annotated tag identifies the exact accepted SQL and executable test tree.
-The formal acceptance record is an administrative documentation change that
-must descend from the tag without changing the accepted implementation.
-
-## Accepted Phase 5 Step 2 Implementation
-
-Phase 5 Step 2 implements the separate deployment tree, deployment migration
-registry, canonical PostgreSQL role shells, and bounded capability membership
-topology.
-
-It does not transfer object ownership or grant protected object privileges.
-
-- [Phase 5 Step 2 — Deployment Manifest and PostgreSQL Role Topology](phase-5-step-2-deployment-role-topology.md)
-
-## Active Phase 5 Step 3
-
-Step 3 transfers the database and protected objects to approved `NOLOGIN`
-owner roles, revokes existing `PUBLIC` database and protected-object access,
-and establishes creator-specific default privileges.
-
-Runtime service grants remain deferred to Phase 5 Step 4.
-
-- [Phase 5 Step 3 — Ownership and Creator-Specific Default Privileges](phase-5-step-3-ownership-and-default-privileges.md)
-
-## Active Phase 5 Step 4
-
-Step 4 exposes only the approved controlled Foundation routines and bounded
-delivery APIs through inherited capability roles. It grants no direct
-protected-table or sequence privileges to runtime identities.
-
-See:
-
-- [Phase 5 Step 4 — Least-Privileged Runtime Grants and Controlled Service APIs](phase-5-step-4-least-privileged-runtime-grants.md)
-
-<!-- ISSP_PHASE5_STEP5_REVIEW_AND_VALIDATION_ROLES -->
-
-## Phase 5 Step 5 — Review and Validation Roles
-
-Phase 5 Step 5 implements separate `NOLOGIN` investigator, audit-reader, and validation-reader capabilities through an exact 40-row view-only privilege contract. The implementation adds two reduced-disclosure investigator views, eight audit-lineage views, and 23 validation-posture views. No review role receives direct protected base-table, sequence, mutation, routine-execution, schema-creation, or temporary-object authority. Phase 5 Step 6 may implement disabled-at-rest break-glass activation and credential lifecycle controls.
-
-## Phase 5 Step 6 Implementation Status
-
-Phase 5 Step 6 implements disabled-at-rest `issp_break_glass` activation,
-independent approval evidence, bounded expiration, forced deactivation,
-append-only emergency evidence, off-host-export requirements, and external
-credential lifecycle policy through deployment migration
-`940_break_glass_and_credential_lifecycle.sql`. Credentials, private keys,
-tokens, and passwords remain outside the repository and database. Phase 5 Step
-7 may perform hostile-condition and role-race validation.
-
-## Phase 5 Step 7 — Hostile-Condition and Role-Race Validation
-
-Phase 5 Step 7 adds hostile-input and PostgreSQL role-race validation plus one pre-freeze hardening correction to deployment migration `940_break_glass_and_credential_lifecycle.sql`: an activated SCRAM verifier must use at least 4096 iterations and cryptographically match the independently approved fingerprint. It introduces no new deployment migration or authority. Concurrent preparation, activation, live-session deactivation, use-versus-closure, and expiration-versus-deactivation must remain deterministic, attributable, and fail-closed before Phase 5 formal acceptance.
-
-## Accepted Phase 5 Boundary
-
-Phase 5 production database security is formally accepted and frozen at `phase-5-production-database-security-boundary-complete-v1`, targeting `9f8dbf9d909ef157df72b12511b165a689559093`. The authoritative acceptance record is [Phase 5 Production Database Security Boundary Acceptance](phase-5-production-database-security-boundary-acceptance.md).
+Historical phase records remain authoritative for their own checkpoints. They
+must not be rewritten to imply that later capabilities existed at the time of
+the earlier acceptance.

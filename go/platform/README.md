@@ -1,7 +1,15 @@
-# Iron Signal Platform Production Go Module
+# DNP Production Go Module
 
-> **Phase status:** Phase 6 Step 8 Hostile, Failure, Concurrency, and Resource
-> Validation implementation candidate.
+<!-- dnp-current-governed-status:start -->
+## Current Governed Project Status
+
+- Accepted database boundary: Phase 5 at `phase-5-production-database-security-boundary-complete-v1`, commit `9f8dbf9d909ef157df72b12511b165a689559093`.
+- Accepted production Go boundary: Phase 6 Step 7 at `79e9723b2dd12e813de8a8c665d08d4f61cc8fab`; static and complete validation each reported 142 PASS and 0 FAIL.
+- Phase 6 Step 8: **rebaseline required** after the governed DNP repository rename and CAD extraction changed paths frozen by the original candidate. Acceptance is not claimed, and the historical candidate gate is not a current acceptance gate.
+- Module ownership: CAD and other domain modules are maintained in the Module Families repository.
+- Machine-readable authority: `docs/project-status.json`.
+<!-- dnp-current-governed-status:end -->
+> **Phase status:** Phase 6 Step 8 rebaseline required; acceptance is not claimed.
 >
 > **Accepted production checkpoint:** Phase 6 Step 7 at commit
 > `79e9723b2dd12e813de8a8c665d08d4f61cc8fab`. Static and complete validation each reported 142 PASS and 0 FAIL.
@@ -124,6 +132,12 @@ From this directory:
 ./scripts/test-process-host-runtime.sh
 ./scripts/test-foundation-adapter.sh
 ./scripts/test-foundation-adapter-runtime.sh
+./scripts/test-authenticated-transport.sh
+./scripts/test-authenticated-transport-runtime.sh
+./scripts/test-delivery-workers.sh
+./scripts/test-delivery-workers-runtime.sh
+./scripts/test-phase6-adversarial.sh
+./scripts/test-phase6-adversarial-runtime.sh
 ```
 
 `check.sh` verifies formatting, vetting, unit tests, module integrity, exact

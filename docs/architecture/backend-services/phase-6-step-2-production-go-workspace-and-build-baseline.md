@@ -49,6 +49,16 @@ The module path is:
 github.com/Iron-Signal-Systems/iron-signal-platform/go/platform
 ```
 
+
+Current canonical module path after the governed repository rename:
+
+```text
+github.com/Iron-Signal-Systems/domain-neutral-platform/go/platform
+```
+
+The earlier path above remains part of the historical Step 2 record; current
+builds and active documentation use the canonical DNP path.
+
 Only one production module exists, so Step 2 deliberately creates no `go.work`
 file. A workspace file is justified only when a second independently versioned
 local module actually exists.

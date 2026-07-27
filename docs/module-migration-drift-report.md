@@ -27,3 +27,11 @@ and branding reference are governed by:
 ```
 
 Historical acceptance hashes remain unchanged.
+
+
+## Project Status Synchronization
+
+Current DNP phase status is machine-readable in `docs/project-status.json`.
+Module Families records the accepted DNP Phase 5 and Phase 6 Step 7 contract
+identities in `module-families.yaml`. The cross-repository validators reject
+status, ownership, module-index, and immutable-reference drift.
