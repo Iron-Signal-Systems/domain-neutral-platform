@@ -207,8 +207,7 @@ independent approval evidence, bounded expiration, forced deactivation,
 append-only emergency evidence, off-host-export requirements, and external
 credential lifecycle policy through deployment migration
 `940_break_glass_and_credential_lifecycle.sql`. Credentials, private keys,
-tokens, and passwords remain outside the repository and database. Phase 5 Step
-7 may perform hostile-condition and role-race validation.
+tokens, and passwords remain outside the repository and database. Phase 5 Step 7 subsequently performed hostile-condition and role-race validation.
 
 ## Historical Phase 5 Step 7 — Hostile-Condition and Role-Race Validation
 

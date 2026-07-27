@@ -28,8 +28,8 @@ identifiers, tags, or historical commits.
 
 Current project status is recorded in `docs/project-status.json`. The registry
 must agree with the root README, documentation indexes, accepted Phase 5 tag
-and commit, accepted Phase 6 Step 7 commit and validation counts, active Step 8
-candidate status, branding asset, and Module Families boundary.
+and commit, accepted Phase 6 Step 7 commit and validation counts, Step 8
+rebaseline-required status, branding asset, and Module Families boundary.
 
 ## Validation
 

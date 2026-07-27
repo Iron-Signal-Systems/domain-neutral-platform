@@ -82,6 +82,10 @@ def main() -> int:
         "Phase 6 Step 8 is an active validation-only implementation candidate",
         "Step 8 is a validation-only implementation candidate",
         "Step 8 is the active validation-only candidate",
+        "validation-only candidate active",
+        "active Step 8 candidate status",
+        "may perform hostile-condition and role-race validation",
+        "rebaseline-required state gate",
     )
     for relative in CURRENT_INDEXES:
         path = root / relative
@@ -90,10 +94,19 @@ def main() -> int:
             fail(f"{relative} is missing the canonical governed-status block")
         if STEP7_COMMIT not in text or "rebaseline required" not in text.lower():
             fail(f"{relative} is not synchronized to Step 7/rebaseline status")
-        lowered = text.lower()
+        lowered = " ".join(text.lower().split())
         for phrase in prohibited:
             if phrase.lower() in lowered:
                 fail(f"{relative} retains stale current-status text: {phrase}")
+
+    boundary_text = " ".join((root / "docs/architecture/foundation/repository-boundary-synchronization.md").read_text(encoding="utf-8").lower().split())
+    for phrase in prohibited:
+        if phrase.lower() in boundary_text:
+            fail(f"repository-boundary synchronization retains stale status text: {phrase}")
+
+    root_readme = (root / "README.md").read_text(encoding="utf-8")
+    if root_readme.count("### Remaining Platform Work") != 1:
+        fail("README must contain exactly one Remaining Platform Work heading")
 
     record = root / "docs/architecture/backend-services/phase-6-step-8-hostile-failure-concurrency-and-resource-validation.md"
     record_text = record.read_text(encoding="utf-8")

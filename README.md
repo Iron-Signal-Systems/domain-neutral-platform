@@ -578,8 +578,6 @@ or authority boundaries.
 
 ### Remaining Platform Work
 
-### Remaining Platform Work
-
 The following remain active work beyond the accepted Phase 5 database boundary
 and accepted Phase 6 Step 7 integration and monitoring delivery-worker
 boundary. Phase 6 Step 8 requires a governed rebaseline:
@@ -1012,23 +1010,22 @@ Active gate:
 
 <!-- ISSP_PHASE5_STEP5_REVIEW_AND_VALIDATION_ROLES -->
 
-## Phase 5 Step 5 — Review and Validation Roles
+## Historical Phase 5 Step 5 — Review and Validation Roles
 
-Phase 5 Step 5 implements separate `NOLOGIN` investigator, audit-reader, and validation-reader capabilities through an exact 40-row view-only privilege contract. The implementation adds two reduced-disclosure investigator views, eight audit-lineage views, and 23 validation-posture views. No review role receives direct protected base-table, sequence, mutation, routine-execution, schema-creation, or temporary-object authority. Phase 5 Step 6 subsequently implemented disabled-at-rest break-glass activation and credential lifecycle controls.
+Phase 5 Step 5 implemented separate `NOLOGIN` investigator, audit-reader, and validation-reader capabilities through an exact 40-row view-only privilege contract. The implementation adds two reduced-disclosure investigator views, eight audit-lineage views, and 23 validation-posture views. No review role receives direct protected base-table, sequence, mutation, routine-execution, schema-creation, or temporary-object authority. Phase 5 Step 6 subsequently implemented disabled-at-rest break-glass activation and credential lifecycle controls.
 
-## Phase 5 Step 6 Implementation Status
+## Historical Phase 5 Step 6 — Break-Glass and Credential Lifecycle
 
-Phase 5 Step 6 implements disabled-at-rest `issp_break_glass` activation,
+Phase 5 Step 6 implemented disabled-at-rest `issp_break_glass` activation,
 independent approval evidence, bounded expiration, forced deactivation,
 append-only emergency evidence, off-host-export requirements, and external
 credential lifecycle policy through deployment migration
 `940_break_glass_and_credential_lifecycle.sql`. Credentials, private keys,
-tokens, and passwords remain outside the repository and database. Phase 5 Step
-7 may perform hostile-condition and role-race validation.
+tokens, and passwords remain outside the repository and database. Phase 5 Step 7 subsequently performed hostile-condition and role-race validation.
 
-## Phase 5 Step 7 — Hostile-Condition and Role-Race Validation
+## Historical Phase 5 Step 7 — Hostile-Condition and Role-Race Validation
 
-Phase 5 Step 7 adds hostile-input and PostgreSQL role-race validation plus one pre-freeze hardening correction to deployment migration `940_break_glass_and_credential_lifecycle.sql`: an activated SCRAM verifier must use at least 4096 iterations and cryptographically match the independently approved fingerprint. It introduces no new deployment migration or authority. Concurrent preparation, activation, live-session deactivation, use-versus-closure, and expiration-versus-deactivation must remain deterministic, attributable, and fail-closed before Phase 5 formal acceptance.
+Phase 5 Step 7 added hostile-input and PostgreSQL role-race validation plus one pre-freeze hardening correction to deployment migration `940_break_glass_and_credential_lifecycle.sql`: an activated SCRAM verifier must use at least 4096 iterations and cryptographically match the independently approved fingerprint. It introduces no new deployment migration or authority. Concurrent preparation, activation, live-session deactivation, use-versus-closure, and expiration-versus-deactivation must remain deterministic, attributable, and fail-closed before Phase 5 formal acceptance.
 
 ## Accepted Phase 5 — Production Database Security Boundary
 
@@ -1096,7 +1093,7 @@ Active candidate gate:
 At the historical Step 2 checkpoint, the production module existed at `go/platform/` with three fail-closed
 bounded executable skeletons, the exact `go1.26.5` toolchain, zero third-party
 modules, deterministic build controls, and a validation gate. No listener,
-database connection, credential, protected operation, or worker loop exists.
+database connection, credential, protected operation, or worker loop existed at that checkpoint.
 <!-- phase-6-step-2-status:end -->
 
 <!-- phase-6-step-3-status:start -->
@@ -1106,7 +1103,8 @@ At the historical Step 3 checkpoint, the three production Go processes had typed
 protected-file PostgreSQL URL loading, exact service-role verification, bounded
 pgx pools, PostgreSQL 18 compatibility checks, loopback-only health/readiness,
 context cancellation, and graceful shutdown. No protected business operation,
-business listener, migration, or durable worker loop is implemented.
+business listener, migration, or durable worker loop was implemented at that
+checkpoint.
 
 Active gate:
 

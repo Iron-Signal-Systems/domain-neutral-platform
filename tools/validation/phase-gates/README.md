@@ -105,8 +105,7 @@ independent approval evidence, bounded expiration, forced deactivation,
 append-only emergency evidence, off-host-export requirements, and external
 credential lifecycle policy through deployment migration
 `940_break_glass_and_credential_lifecycle.sql`. Credentials, private keys,
-tokens, and passwords remain outside the repository and database. Phase 5 Step
-7 may perform hostile-condition and role-race validation.
+tokens, and passwords remain outside the repository and database. Phase 5 Step 7 subsequently performed hostile-condition and role-race validation.
 
 ## Historical Phase 5 Step 7 — Hostile-Condition and Role-Race Validation
 
@@ -203,11 +202,10 @@ accepted checkpoint is `ec3c36081c686fa8ec82c8fd94bda421ed6cff42` with
 <!-- phase-6-step-8-status:start -->
 ## Phase 6 Step 8 — Hostile, Failure, Concurrency, and Resource Validation
 
-`validate_phase6_step8.sh` is the rebaseline-required state gate. It
-revalidates Step 7 from an isolated branch named `dev`, freezes all production
-source and deployment authority, runs repeated hostile and race tests, and in
-complete mode records disposable PostgreSQL 18 correctness and resource
-evidence. Formal Phase 6 acceptance remains Step 9.
+`validate_phase6_step8.sh` is the preserved historical candidate gate. It is
+not runnable against current `dev` until a governed rebaseline inventories and
+revalidates the post-Step7 repository rename, CAD extraction, and affected path
+changes. Formal Phase 6 acceptance remains deferred.
 <!-- phase-6-step-8-status:end -->
 
 ## Cross-Repository Boundary Check

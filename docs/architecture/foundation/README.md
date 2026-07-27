@@ -11,7 +11,8 @@
 <!-- dnp-current-governed-status:end -->
 > **Current cross-boundary status:** Phase 5 production database security
 > boundary formally accepted; Phase 6 Steps 3 through 7 production Go
-> checkpoints accepted; Phase 6 Step 8 validation-only candidate active.
+> checkpoints accepted; Phase 6 Step 8 requires a governed rebaseline;
+> acceptance is not claimed.
 >
 > **Boundary:** This Foundation index records downstream consumption
 > status without moving service-host, transport, or module behavior into
