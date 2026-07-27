@@ -29,8 +29,8 @@
 - [Phase 6 Step 8 Hostile, Failure, Concurrency, and Resource Validation](architecture/backend-services/phase-6-step-8-hostile-failure-concurrency-and-resource-validation.md)
 - [Communications Architecture](architecture/communications/README.md)
 - [GIS and Mapping Architecture](architecture/gis-and-mapping/README.md)
-- [Operational Workstation Architecture](../modules/CAD/docs/architecture/operational-workstation/README.md)
-- [User-Interface Architecture](../modules/CAD/docs/architecture/user-interface/README.md)
+- [Operational Workstation Architecture](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/docs/architecture/operational-workstation/README.md)
+- [User-Interface Architecture](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/docs/architecture/user-interface/README.md)
 - [Resource Telemetry and Performance-Regression Testing](architecture/foundation/resource-telemetry-and-performance-regression-testing-model.md)
 - [Foundation Migration Timeout and Execution Performance Standard](architecture/foundation/foundation-migration-timeout-and-execution-performance-standard.md)
 - [Phase 3 Authorization Acceptance](architecture/foundation/phase-3-authorization-decision-and-controlled-lease-acceptance.md)
@@ -274,3 +274,21 @@ claim lease recovery, completion races, repeated race tests, and
 observation-only resource telemetry.
 
 - [Phase 6 Step 8 Hostile, Failure, Concurrency, and Resource Validation](architecture/backend-services/phase-6-step-8-hostile-failure-concurrency-and-resource-validation.md)
+
+## External Module Families
+
+Domain-specific operational modules are maintained in the
+[Module Families repository](https://github.com/Iron-Signal-Systems/module-families).
+
+Pinned module revision:
+
+```text
+1e017c7ab874969395fb31e030c0149116bf77cf
+```
+
+Migrated modules:
+
+- [CAD](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/README.md)
+
+DNP retains the domain-neutral Platform Foundation. Module implementation,
+validation, and acceptance occur in Module Families.

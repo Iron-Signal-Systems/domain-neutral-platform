@@ -113,14 +113,14 @@ This gate formally accepts and freezes the production database security boundary
 
 ## CAD Phase 0 Static Gate
 
-```bash
-./tools/validation/phase-gates/cad/validate_phase0.sh
-```
+The CAD Phase 0 gate is maintained in the Module Families repository:
 
-The CAD Phase 0 gate validates the documentation package, 104 seeded
-requirements, testing registries, identifier uniqueness, cross-registry
-references, status synchronization, and the absence of executable or production
-claims. It does not establish CAD implementation acceptance.
+- [CAD Phase 0 validation gate](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/tools/validation/phase-gates/cad/validate_phase0.sh)
+
+The gate validates the CAD documentation package, seeded requirements, testing
+registries, identifier uniqueness, cross-registry references, status
+synchronization, and the absence of executable or production claims. It does
+not establish CAD implementation acceptance.
 
 <!-- PHASE6_STEP1_STATUS -->
 

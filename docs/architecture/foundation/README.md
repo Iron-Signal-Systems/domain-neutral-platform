@@ -258,8 +258,8 @@ See:
 - [Performance, Efficiency, and Resource Governance](performance-efficiency-and-resource-governance-model.md)
 - [Resource Telemetry and Performance-Regression Testing](resource-telemetry-and-performance-regression-testing-model.md)
 - [Foundation Migration Timeout and Execution Performance Standard](foundation-migration-timeout-and-execution-performance-standard.md)
-- [Client Experience and Accessibility](../../../modules/CAD/docs/architecture/user-interface/client-experience-and-accessibility-model.md)
-- [Accessibility and Inclusive Interaction](../../../modules/CAD/docs/architecture/user-interface/accessibility-and-inclusive-interaction-model.md)
+- [Client Experience and Accessibility](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/docs/architecture/user-interface/client-experience-and-accessibility-model.md)
+- [Accessibility and Inclusive Interaction](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/docs/architecture/user-interface/accessibility-and-inclusive-interaction-model.md)
 - [Observability, Health, and Operational Telemetry](observability-health-and-operational-telemetry-model.md)
 
 ## Current Implementation Boundaries
