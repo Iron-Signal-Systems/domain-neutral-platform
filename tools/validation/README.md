@@ -262,3 +262,17 @@ tests. Complete mode additionally runs the disposable PostgreSQL 18 campaign
 and writes separate correctness and resource reports under
 `/tmp/phase-6-step-8-results`.
 <!-- phase-6-step-8-status:end -->
+
+## Repository Boundary and Branding Synchronization
+
+Run the DNP repository-boundary, external-module-link, accepted-gate, and
+branding-asset checks from the repository root:
+
+```bash
+./tools/validation/check_repository_sync.sh
+```
+
+This check confirms that DNP contains no local module tree or CAD gate, that
+the README layout matches the Foundation-only boundary, that the configured
+branding PNG exists and is valid, and that accepted Phase 4 gates validate the
+immutable Module Families integration record.

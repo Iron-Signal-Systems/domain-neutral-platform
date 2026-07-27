@@ -90,10 +90,7 @@ module_boundary_files=(
     'docs/architecture/communications/resource-subscription-and-live-update-model.md'
     'docs/architecture/gis-and-mapping/README.md'
     'docs/architecture/gis-and-mapping/map-rendering-and-data-delivery-architecture.md'
-    'modules/CAD/docs/architecture/operational-workstation/README.md'
-    'modules/CAD/docs/architecture/operational-workstation/operational-workstation-architecture.md'
-    'modules/CAD/docs/architecture/user-interface/README.md'
-    'modules/CAD/docs/architecture/user-interface/accessibility-and-inclusive-interaction-model.md'
+    'docs/architecture/foundation/module-family-repository-integration.md'
 )
 
 pass() {
@@ -517,18 +514,18 @@ check_contains docs/architecture/README.md \
 check_contains docs/architecture/README.md \
     'None of those downstream areas becomes an independent source' \
     'Architecture index prevents downstream authority creation'
-check_contains modules/CAD/docs/architecture/operational-workstation/operational-workstation-architecture.md \
-    'Unable to convert a local presentation decision into platform authority.' \
-    'Operational Workstation cannot convert presentation into authority'
-check_contains modules/CAD/docs/architecture/operational-workstation/operational-workstation-architecture.md \
-    'Grant protected platform authority.' \
-    'Operational Workstation cannot grant protected platform authority'
-check_contains modules/CAD/docs/architecture/operational-workstation/operational-workstation-architecture.md \
-    'Replace the Foundation Decision Engine.' \
-    'Operational Workstation cannot replace the Foundation Decision Engine'
-check_contains modules/CAD/docs/architecture/user-interface/README.md \
-    'does not independently create identity, Authority Grants, Approval Action Records, Authorization Decisions, Authorization Leases, committed state, or canonical truth' \
-    'User interface cannot independently create governed truth'
+check_contains docs/architecture/foundation/module-family-repository-integration.md \
+    'https://github.com/Iron-Signal-Systems/module-families' \
+    'DNP records the canonical Module Families repository'
+check_regex docs/architecture/foundation/module-family-repository-integration.md \
+    'Commit: [0-9a-f]{40}' \
+    'DNP pins an immutable Module Families commit'
+check_contains docs/architecture/foundation/module-family-repository-integration.md \
+    'Path:   modules/' \
+    'DNP records the canonical external module path'
+check_contains docs/architecture/foundation/module-family-repository-integration.md \
+    '/modules/CAD/README.md' \
+    'DNP integration record identifies the CAD module'
 
 if [[ "$STATIC_ONLY" -eq 1 ]]; then
     printf '\nStatic-only validation requested; PostgreSQL execution skipped.\n'

@@ -16,3 +16,14 @@ Review results:
 - Existing DNP acceptance tags, commit hashes, and frozen historical
   identifiers were preserved.
 - No duplicated generated GitHub URLs were introduced.
+
+## Post-Migration Synchronization
+
+The DNP root repository layout, validation indexes, accepted Phase 4 gates,
+and branding reference are governed by:
+
+```bash
+./tools/validation/check_repository_sync.sh
+```
+
+Historical acceptance hashes remain unchanged.
