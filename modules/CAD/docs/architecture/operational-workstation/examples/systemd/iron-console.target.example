@@ -1,6 +1,0 @@
-[Unit]
-Description=Iron Signal Systems Managed Operational Console
-Requires=iron-console-coordinator.service
-Wants=iron-map.socket iron-map.service
-After=graphical-session.target
-AllowIsolate=yes

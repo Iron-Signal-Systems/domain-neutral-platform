@@ -64,10 +64,10 @@ monitoring vendor, identity provider, or compliance framework.
 - [Resource Subscription and Live Update Model](communications/resource-subscription-and-live-update-model.md)
 - [GIS and Mapping](gis-and-mapping/README.md)
 - [Map Rendering and Data Delivery Architecture](gis-and-mapping/map-rendering-and-data-delivery-architecture.md)
-- [Operational Workstation](../../modules/CAD/docs/architecture/operational-workstation/README.md)
-- [Operational Workstation Architecture](../../modules/CAD/docs/architecture/operational-workstation/operational-workstation-architecture.md)
-- [User-Interface Architecture](../../modules/CAD/docs/architecture/user-interface/README.md)
-- [Accessibility and Inclusive Interaction](../../modules/CAD/docs/architecture/user-interface/accessibility-and-inclusive-interaction-model.md)
+- [Operational Workstation](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/docs/architecture/operational-workstation/README.md)
+- [Operational Workstation Architecture](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/docs/architecture/operational-workstation/operational-workstation-architecture.md)
+- [User-Interface Architecture](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/docs/architecture/user-interface/README.md)
+- [Accessibility and Inclusive Interaction](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/docs/architecture/user-interface/accessibility-and-inclusive-interaction-model.md)
 
 ## Accepted Implementation Status
 
@@ -295,3 +295,21 @@ resource evidence while preserving the accepted production implementation.
 
 - [Phase 6 Step 8 Hostile, Failure, Concurrency, and Resource Validation](backend-services/phase-6-step-8-hostile-failure-concurrency-and-resource-validation.md)
 <!-- phase-6-step-8-status:end -->
+
+## External Module Families
+
+Domain-specific operational modules are maintained in the
+[Module Families repository](https://github.com/Iron-Signal-Systems/module-families).
+
+Pinned module revision:
+
+```text
+1e017c7ab874969395fb31e030c0149116bf77cf
+```
+
+Migrated modules:
+
+- [CAD](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/README.md)
+
+DNP retains the domain-neutral Platform Foundation. Module implementation,
+validation, and acceptance occur in Module Families.

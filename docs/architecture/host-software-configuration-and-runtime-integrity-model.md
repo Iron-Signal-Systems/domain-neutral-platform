@@ -452,4 +452,4 @@ This document governs the installed host and runtime realization of that
 accepted release.
 
 CAD rolling maintenance, availability, and HA evidence are governed by the
-[CAD Operational Readiness and Production Acceptance Model](../../modules/CAD/docs/architecture/cad-operational-readiness-and-production-acceptance-model.md).
+[CAD Operational Readiness and Production Acceptance Model](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/docs/architecture/cad-operational-readiness-and-production-acceptance-model.md).

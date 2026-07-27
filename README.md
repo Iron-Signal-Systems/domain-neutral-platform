@@ -679,7 +679,7 @@ Start with:
 - [Phase 4 Approval Independence and Separation of Duties Acceptance](docs/architecture/foundation/phase-4-approval-independence-and-separation-of-duties-acceptance.md)
 - [PostgreSQL Architecture](docs/architecture/postgresql.md)
 - [External-System-Independent Observability](docs/architecture/external-system-independent-observability.md)
-- [User-Interface Architecture](modules/CAD/docs/architecture/user-interface/README.md)
+- [User-Interface Architecture](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/docs/architecture/user-interface/README.md)
 - [Project Goals](docs/goals/README.md)
 - [Compliance Profiles](docs/compliance-profiles/README.md)
 - [Validation Tools](tools/validation/README.md)
@@ -1185,3 +1185,21 @@ observation-only resource reports without changing production source.
 
 - [Phase 6 Step 8 Hostile, Failure, Concurrency, and Resource Validation](docs/architecture/backend-services/phase-6-step-8-hostile-failure-concurrency-and-resource-validation.md)
 <!-- phase-6-step-8-status:end -->
+
+## External Module Families
+
+Domain-specific operational modules are maintained in the
+[Module Families repository](https://github.com/Iron-Signal-Systems/module-families).
+
+Pinned module revision:
+
+```text
+1e017c7ab874969395fb31e030c0149116bf77cf
+```
+
+Migrated modules:
+
+- [CAD](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/README.md)
+
+DNP retains the domain-neutral Platform Foundation. Module implementation,
+validation, and acceptance occur in Module Families.

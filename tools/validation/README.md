@@ -154,11 +154,10 @@ It validates the annotated tag, exact accepted implementation commit, frozen dep
 
 ## CAD Phase 0 Static Gate
 
-Validate CAD documentation and assurance registries:
+The CAD documentation and assurance-registry gate is maintained in Module
+Families:
 
-```bash
-./tools/validation/phase-gates/cad/validate_phase0.sh
-```
+- [CAD Phase 0 validation gate](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/tools/validation/phase-gates/cad/validate_phase0.sh)
 
 This gate validates documentation and machine-readable design metadata only. It
 does not claim executable CAD implementation or production readiness.
