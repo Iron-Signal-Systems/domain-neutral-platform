@@ -3,16 +3,16 @@
 This directory contains current DNP project-identity assets owned and maintained
 by Iron Signal Systems.
 
-## Primary Badge
+## Primary Crest
 
 ```text
-dnp-platform-badge.png
+dnp-foundation-crest.png
 ```
 
 Recommended alt text:
 
 ```text
-DNP — Domain-Neutral Platform Foundation badge
+DNP — Domain-Neutral Platform Foundation crest
 ```
 
 Do not use the image as the only source of the project name. Textual interfaces,

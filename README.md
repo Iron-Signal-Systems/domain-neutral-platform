@@ -2,8 +2,8 @@
 
 <p align="center">
   <img
-    src="docs/assets/branding/dnp-platform-badge.png"
-    alt="DNP — Domain-Neutral Platform Foundation badge"
+    src="docs/assets/branding/dnp-foundation-crest.png"
+    alt="DNP — Domain-Neutral Platform Foundation crest"
     width="760"
   >
 </p>
@@ -594,12 +594,10 @@ the accepted Phase 4 Foundation boundary.
 ### Remaining Platform Work
 
 The following remain active work beyond the accepted Phase 5 database boundary
-and accepted Phase 6 Step 4 process-host checkpoint:
+and accepted Phase 6 Step 7 integration and monitoring delivery-worker
+boundary. Phase 6 Step 8 remains an implementation candidate:
 
-- Phase 6 Step 7 delivery-worker acceptance
 - Additional controlled Foundation API operations after separate review
-- Authenticated request and transport boundaries
-- Integration and monitoring delivery-worker behavior
 - Full hostile, failure, concurrency, and resource validation for protected
   operations and workers
 - Decision Record cryptographic integrity anchoring
@@ -610,7 +608,7 @@ and accepted Phase 6 Step 4 process-host checkpoint:
 - Off-host integrity anchoring and protected logging
 - Backup protection and restoration validation
 - Trusted rebuild and compromise recovery
-- Shared Resources and operational modules
+- Shared Resources and additional operational modules
 
 These are expected development stages, not hidden claims of completion.
 
@@ -645,8 +643,6 @@ The authoritative Foundation migration order is maintained in:
 │   ├── README.md
 │   ├── experiments/             # historical; production must not import
 │   └── platform/                # accepted production Go module
-├── modules/
-│   └── CAD/
 ├── sql/
 │   ├── deployment/              # accepted Phase 5 deployment boundary
 │   └── schema/                  # Platform Foundation migrations

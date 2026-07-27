@@ -194,3 +194,15 @@ source and deployment authority, runs repeated hostile and race tests, and in
 complete mode records disposable PostgreSQL 18 correctness and resource
 evidence. Formal Phase 6 acceptance remains Step 9.
 <!-- phase-6-step-8-status:end -->
+
+## Cross-Repository Boundary Check
+
+Before running historical or active phase gates, validate the current
+repository boundary:
+
+```bash
+./tools/validation/check_repository_sync.sh
+```
+
+Accepted historical gates must validate the immutable Module Families
+integration record rather than require deleted local module files.

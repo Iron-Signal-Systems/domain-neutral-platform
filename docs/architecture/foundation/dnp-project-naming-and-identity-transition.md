@@ -123,10 +123,10 @@ Any later technical-identifier migration must include:
 
 ## Branding Asset
 
-The primary DNP badge is stored at:
+The primary DNP crest is stored at:
 
 ```text
-docs/assets/branding/dnp-platform-badge.png
+docs/assets/branding/dnp-foundation-crest.png
 ```
 
 Recommended Markdown use:
@@ -134,8 +134,8 @@ Recommended Markdown use:
 ```html
 <p align="center">
   <img
-    src="docs/assets/branding/dnp-platform-badge.png"
-    alt="DNP — Domain-Neutral Platform Foundation badge"
+    src="docs/assets/branding/dnp-foundation-crest.png"
+    alt="DNP — Domain-Neutral Platform Foundation crest"
     width="760"
   >
 </p>
