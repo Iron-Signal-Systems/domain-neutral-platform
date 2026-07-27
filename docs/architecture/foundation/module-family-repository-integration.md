@@ -27,3 +27,11 @@ DNP documentation and future integration work must reference immutable Module
 Families revisions. DNP must not restore domain-specific records or workflows
 to the Foundation repository without a separately governed repository-boundary
 decision.
+
+
+## Status Synchronization
+
+DNP current project status is recorded in `docs/project-status.json`. Module
+Families records the accepted DNP database and Go contract revisions in its
+`module-families.yaml` catalog. The initial module-import revision remains
+immutable and is not replaced by later documentation synchronization commits.

@@ -1,6 +1,6 @@
 # Phase 6 Step 8 — Hostile, Failure, Concurrency, and Resource Validation
 
-> **Status:** Implementation candidate. Acceptance is not yet claimed.
+> **Status:** Rebaseline required. Acceptance is not claimed.
 >
 > **Accepted predecessor:** Phase 6 Step 7 at commit
 > `79e9723b2dd12e813de8a8c665d08d4f61cc8fab`, with 142 PASS and 0 FAIL in
@@ -10,6 +10,20 @@
 > resource observation, and synchronized documentation only. It adds no
 > production operation, route, migration, dependency, service identity,
 > database privilege, relay authority, or worker behavior.
+
+<!-- phase-6-step-8-rebaseline-notice:start -->
+## Rebaseline Notice
+
+The original candidate was built over accepted Step 7 at `79e9723b2dd12e813de8a8c665d08d4f61cc8fab`.
+Afterward, the governed repository rename to DNP and extraction of CAD into
+Module Families changed production and repository paths that the candidate
+froze byte-for-byte. The historical candidate gate therefore cannot honestly
+validate current `dev`.
+
+Before hostile validation resumes, a separately governed change must inventory
+and revalidate the post-Step7 changes, establish a new baseline, and update the
+Step 8 gate. Acceptance is not claimed.
+<!-- phase-6-step-8-rebaseline-notice:end -->
 
 ## 1. Purpose
 

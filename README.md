@@ -1,5 +1,14 @@
 # DNP — Domain-Neutral Platform
 
+<!-- dnp-current-governed-status:start -->
+## Current Governed Project Status
+
+- Accepted database boundary: Phase 5 at `phase-5-production-database-security-boundary-complete-v1`, commit `9f8dbf9d909ef157df72b12511b165a689559093`.
+- Accepted production Go boundary: Phase 6 Step 7 at `79e9723b2dd12e813de8a8c665d08d4f61cc8fab`; static and complete validation each reported 142 PASS and 0 FAIL.
+- Phase 6 Step 8: **rebaseline required** after the governed DNP repository rename and CAD extraction changed paths frozen by the original candidate. Acceptance is not claimed, and the historical candidate gate is not a current acceptance gate.
+- Module ownership: CAD and other domain modules are maintained in the Module Families repository.
+- Machine-readable authority: `docs/project-status.json`.
+<!-- dnp-current-governed-status:end -->
 <p align="center">
   <img
     src="docs/assets/branding/dnp-foundation-crest.png"
@@ -148,7 +157,7 @@ The current Foundation includes:
 - An accepted Phase 6 Step 5 controlled Foundation policy-binding adapter
 - An accepted Phase 6 Step 6 authenticated request and transport boundary
 - An accepted Phase 6 Step 7 integration and monitoring delivery-worker boundary
-- A Phase 6 Step 8 hostile, failure, concurrency, and resource-validation candidate
+- A Phase 6 Step 8 rebaseline-required status
 
 ### Accepted Phase 0 Baseline
 
@@ -537,65 +546,43 @@ utility accounts, permits, or other module-specific business records.
 
 ## Current Implementation Boundaries
 
-### Accepted Behavior
+### Accepted Foundation Behavior
 
-Accepted behavior now includes:
+Accepted Foundation behavior includes the formally accepted Phase 1 through
+Phase 4 authentication, session, authorization, lease, approval-independence,
+and separation-of-duties boundaries. Their historical tags, commits, counts,
+and technical identifiers remain unchanged.
 
-- Authentication Assertion lifecycle constraints
-- Controlled Authentication Assertion verification
-- Exact Authentication Assertion context matching
-- Atomic Authentication Assertion consumption
-- Replay denial
-- Authentication Assertion revocation with history preservation
-- Authentication Assertion concurrent single-use proof
-- Atomic session establishment from a verified Authentication Assertion
-- Controlled session step-up, activity, locking, termination, and expiration
-- Session lifecycle concurrency proofs
-- Deterministic Authorization Policy Version selection
-- Required-stage closure and fail-closed Decision Record finalization
-- Controlled Authorization Lease issuance and renewal binding
-- Authorization Lease secret hashing
-- Exact-context Authorization Lease verification and use
-- Reusable, single-use, and limited-use accounting
-- Authorization Lease expiration and revocation
-- Failed-use denial without successful-use side effects
-- Authorization finalization, issuance, consumption, and terminal-transition
-  concurrency proofs
-- Approval-independence and separation-of-duties structures
-- Approval-stage Authority Definition binding
-- Effective-actor, session, Authority Grant, and duty-link structures
-- Resource telemetry text and JSON observations
-- Manifest-driven clean installation
-- Structural, catalog, privilege, behavioral, negative, and concurrency tests
+### Accepted Phase 5 Production Database Security Boundary
 
-### Accepted Phase 4 Boundary
+Phase 5 is formally accepted at `phase-5-production-database-security-boundary-complete-v1`, targeting
+`9f8dbf9d909ef157df72b12511b165a689559093`. It freezes the production PostgreSQL role, ownership,
+least-privileged runtime, investigation, validation, break-glass, credential
+lifecycle, and hostile-condition concurrency boundary.
 
-Phase 4 approval independence and separation of duties is formally accepted.
-The tagged implementation provides:
+### Accepted Phase 6 Step 7 Production Go Boundary
 
-- Exact Approval Request, policy-stage, actor, organization, session, and
-  Authority Grant binding
-- Requester, directly affected identity, duplicate effective actor, distinct
-  organization, Authority Grant origin, and reciprocal-chain independence
-- Delegated Authority Grant lineage and bounded delegation
-- `JOINT_EXERCISE`, `CONCURRENT_HOLDING`, and `CHAIN_PARTICIPATION`
-  incompatible-authority enforcement
-- Immutable `APPROVE` duty recording and prohibited-duty evaluation
-- Current Approval Action derivation, stage satisfaction, blocking denial, and
-  finalization-once Approval Requests
-- Exact Decision Record stage linkage and approval-backed lease continuity
-- Independent-connection concurrency proofs without one global approval lock
+Phase 6 Step 7 is the newest accepted production Go implementation checkpoint
+at `79e9723b2dd12e813de8a8c665d08d4f61cc8fab`. Static and complete validation each reported
+142 PASS and 0 FAIL. The accepted vertical slice includes bounded process
+bootstrap, PostgreSQL connectivity, one controlled Foundation adapter, one
+authenticated loopback business route, and two service-specific durable
+delivery workers.
 
-Backend services, communications, GIS and mapping, operational workstations,
-user interfaces, and operational modules remain downstream consumers of
-governed Foundation decisions. No module-specific record or workflow is part of
-the accepted Phase 4 Foundation boundary.
+### Phase 6 Step 8 — Rebaseline Required
+
+The original Phase 6 Step 8 validation-only candidate requires a governed rebaseline. It adds hostile,
+failure, concurrency, privilege, redaction, race, and resource-observation
+campaigns without changing accepted production Go, SQL, deployment, identity,
+or authority boundaries.
+
+### Remaining Platform Work
 
 ### Remaining Platform Work
 
 The following remain active work beyond the accepted Phase 5 database boundary
 and accepted Phase 6 Step 7 integration and monitoring delivery-worker
-boundary. Phase 6 Step 8 remains an implementation candidate:
+boundary. Phase 6 Step 8 requires a governed rebaseline:
 
 - Additional controlled Foundation API operations after separate review
 - Full hostile, failure, concurrency, and resource validation for protected
@@ -659,6 +646,10 @@ The authoritative Foundation migration order is maintained in:
 Start with:
 
 - [Platform Documentation](docs/README.md)
+- [Machine-Readable Project Status](docs/project-status.json)
+- [Repository Boundary Synchronization](docs/architecture/foundation/repository-boundary-synchronization.md)
+- [Module Family Repository Integration](docs/architecture/foundation/module-family-repository-integration.md)
+- [Module Migration Documentation Review](docs/module-migration-drift-report.md)
 - [DNP Project Naming and Identity Transition](docs/architecture/foundation/dnp-project-naming-and-identity-transition.md)
 - [Architecture Index](docs/architecture/README.md)
 - [Platform Foundation Documentation](docs/architecture/foundation/README.md)
@@ -1023,7 +1014,7 @@ Active gate:
 
 ## Phase 5 Step 5 — Review and Validation Roles
 
-Phase 5 Step 5 implements separate `NOLOGIN` investigator, audit-reader, and validation-reader capabilities through an exact 40-row view-only privilege contract. The implementation adds two reduced-disclosure investigator views, eight audit-lineage views, and 23 validation-posture views. No review role receives direct protected base-table, sequence, mutation, routine-execution, schema-creation, or temporary-object authority. Phase 5 Step 6 may implement disabled-at-rest break-glass activation and credential lifecycle controls.
+Phase 5 Step 5 implements separate `NOLOGIN` investigator, audit-reader, and validation-reader capabilities through an exact 40-row view-only privilege contract. The implementation adds two reduced-disclosure investigator views, eight audit-lineage views, and 23 validation-posture views. No review role receives direct protected base-table, sequence, mutation, routine-execution, schema-creation, or temporary-object authority. Phase 5 Step 6 subsequently implemented disabled-at-rest break-glass activation and credential lifecycle controls.
 
 ## Phase 5 Step 6 Implementation Status
 
@@ -1102,7 +1093,7 @@ Active candidate gate:
 <!-- phase-6-step-2-status:start -->
 ## Phase 6 Step 2 — Production Go Workspace and Reproducible Build Baseline
 
-The production module now exists at `go/platform/` with three fail-closed
+At the historical Step 2 checkpoint, the production module existed at `go/platform/` with three fail-closed
 bounded executable skeletons, the exact `go1.26.5` toolchain, zero third-party
 modules, deterministic build controls, and a validation gate. No listener,
 database connection, credential, protected operation, or worker loop exists.
@@ -1111,7 +1102,7 @@ database connection, credential, protected operation, or worker loop exists.
 <!-- phase-6-step-3-status:start -->
 ## Phase 6 Step 3 — Runtime Bootstrap and Bounded PostgreSQL Connectivity
 
-The three production Go processes now have typed fail-closed configuration,
+At the historical Step 3 checkpoint, the three production Go processes had typed fail-closed configuration,
 protected-file PostgreSQL URL loading, exact service-role verification, bounded
 pgx pools, PostgreSQL 18 compatibility checks, loopback-only health/readiness,
 context cancellation, and graceful shutdown. No protected business operation,
