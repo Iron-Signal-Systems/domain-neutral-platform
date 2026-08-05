@@ -5,8 +5,8 @@
 
 - Accepted database boundary: Phase 5 at `phase-5-production-database-security-boundary-complete-v1`, commit `9f8dbf9d909ef157df72b12511b165a689559093`.
 - Accepted production Go boundary: Phase 6 Step 7 at `79e9723b2dd12e813de8a8c665d08d4f61cc8fab`; static and complete validation each reported 142 PASS and 0 FAIL.
-- Phase 6 Step 8: **rebaseline required** after the governed DNP repository rename and CAD extraction changed paths frozen by the original candidate. Acceptance is not claimed, and the historical candidate gate is not a current acceptance gate.
-- Module ownership: CAD and other domain modules are maintained in the Module Families repository.
+- Phase 6 Step 8: **rebaseline required** after the governed DNP repository rename and module extraction changed paths frozen by the original candidate. Acceptance is not claimed, and the historical candidate gate is not a current acceptance gate.
+- Module ownership: domain-specific operational modules are maintained in the Module Families repository.
 - Machine-readable authority: `docs/project-status.json`.
 <!-- dnp-current-governed-status:end -->
 <p align="center">
@@ -23,11 +23,10 @@
 >
 > **Development status: Pre-alpha, domain-neutral Platform Foundation**
 >
-> This repository began with public safety as its first operational focus.
 > Current development is concentrated on the shared Platform Foundation that
-> future public-safety, municipal, school, and other institutional modules may
-> use. Foundation SQL, the accepted production database security boundary, and
-> the production Go service boundary are being completed in deliberate stages.
+> independently governed operational module families may consume. Foundation
+> SQL, the accepted production database security boundary, and the production
+> Go service boundary are being completed in deliberate stages.
 > This repository is not ready for production use.
 
 Canonical repository:
@@ -60,8 +59,8 @@ The ultimate measure of success is not the number of features implemented, but w
 
 ## Platform Scope and Long-Term Direction
 
-Public safety remains the planned first module family, but it does not define
-the limits of the Platform Foundation.
+Operational module priorities are governed in the Module Families repository
+and do not define the limits of the Platform Foundation.
 
 The Platform Foundation is domain-neutral. It provides shared capabilities for:
 
@@ -78,19 +77,8 @@ The Platform Foundation is domain-neutral. It provides shared capabilities for:
 - External-system integration
 - Resource and workload governance
 
-Future module families may include:
-
-- Public safety
-- Municipal administration
-- Finance and budgeting
-- Human resources
-- Permitting and licensing
-- Code enforcement
-- Property and asset management
-- Fleet and public works
-- Utility operations and billing
-- School and educational administration
-- Other local-government or institutional services
+Operational module families, their priorities, and their roadmaps are
+maintained in the Module Families repository.
 
 Domain-specific records and workflows belong in their modules.
 
@@ -107,22 +95,11 @@ security and governance foundation for every application.
 
 ## Initial Operational Direction
 
-Public safety is the initial module family because it creates demanding
-requirements for identity, authorization, availability, auditability,
-historical integrity, and explainable decisions.
+DNP does not select, prioritize, or define operational modules. Module-family
+sequencing, domain terminology, requirements, user interfaces, validation, and
+acceptance are governed in the Module Families repository.
 
-Possible public-safety modules include:
-
-- Computer Aided Dispatch
-- Records Management
-- Evidence and Property
-- Personnel Operations
-- Fleet Management
-- Fire and EMS Operations
-- Additional public-safety capabilities
-
-Computer Aided Dispatch is planned as the first operational module, but CAD
-does not define the Platform Foundation.
+DNP supplies only the shared Foundation contracts those modules may consume.
 
 ## Current Development Stage
 
@@ -491,8 +468,8 @@ Module Families
 External-System Adapters, Integrations, and User Interfaces
 ```
 
-Examples of module families include public safety, municipal administration,
-education, finance, public works, utilities, permitting, and human resources.
+Module-family names, priorities, and roadmaps are intentionally maintained
+outside DNP.
 
 A lower layer may consume an upper layer.
 
@@ -540,9 +517,9 @@ The current Foundation architecture covers:
 - Transactional integration outbox
 - Security boundaries and validation inventories
 
-The Foundation does not contain CAD incidents, RMS cases, evidence custody,
-fleet maintenance, payroll, Fire and EMS clinical workflows, student records,
-utility accounts, permits, or other module-specific business records.
+The Foundation does not contain module-owned business records, workflows,
+domain status models, user-interface behavior, or operational acceptance
+artifacts.
 
 ## Current Implementation Boundaries
 
@@ -652,6 +629,7 @@ Start with:
 - [Architecture Index](docs/architecture/README.md)
 - [Platform Foundation Documentation](docs/architecture/foundation/README.md)
 - [Foundation Terminology and Domain Neutrality](docs/architecture/foundation/foundation-terminology-and-domain-neutrality.md)
+- [Domain-Neutrality Exception Policy](docs/architecture/foundation/domain-neutrality-exception-policy.md)
 - [Authorization Evaluation Contract](docs/architecture/foundation/authorization-evaluation-contract.md)
 - [Approval Framework](docs/architecture/foundation/approval-framework.md)
 - [Approval Independence and Separation of Duties](docs/architecture/foundation/approval-independence-and-separation-of-duties-model.md)
@@ -664,7 +642,7 @@ Start with:
 - [Phase 4 Approval Independence and Separation of Duties Acceptance](docs/architecture/foundation/phase-4-approval-independence-and-separation-of-duties-acceptance.md)
 - [PostgreSQL Architecture](docs/architecture/postgresql.md)
 - [External-System-Independent Observability](docs/architecture/external-system-independent-observability.md)
-- [User-Interface Architecture](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/docs/architecture/user-interface/README.md)
+- [Module Families Repository](https://github.com/Iron-Signal-Systems/module-families)
 - [Project Goals](docs/goals/README.md)
 - [Compliance Profiles](docs/compliance-profiles/README.md)
 - [Validation Tools](tools/validation/README.md)
@@ -924,8 +902,8 @@ Before production use, the platform must establish and validate:
 The platform exists to provide a trusted operational foundation where every
 important decision can be understood, verified, and defended.
 
-Public safety is the first planned module family and one of the most demanding
-tests of that Foundation.
+Operational module priorities and domain-specific success criteria are
+governed outside this repository.
 
 The Foundation succeeds only when municipalities, schools, and similar
 organizations can rely on it without surrendering security, explainability,
@@ -1176,15 +1154,10 @@ observation-only resource reports without changing production source.
 Domain-specific operational modules are maintained in the
 [Module Families repository](https://github.com/Iron-Signal-Systems/module-families).
 
-Pinned module revision:
-
-```text
-1e017c7ab874969395fb31e030c0149116bf77cf
-```
-
-Migrated modules:
-
-- [CAD](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/README.md)
+The immutable extraction revision and migrated-module inventory are recorded
+in the
+[Module Family Repository Integration](docs/architecture/foundation/module-family-repository-integration.md)
+record.
 
 DNP retains the domain-neutral Platform Foundation. Module implementation,
 validation, and acceptance occur in Module Families.

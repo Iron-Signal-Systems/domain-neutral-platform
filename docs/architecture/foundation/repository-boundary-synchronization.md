@@ -6,8 +6,8 @@ Normative repository-maintenance contract.
 
 ## Boundary
 
-DNP owns the domain-neutral Platform Foundation. Domain-specific modules,
-including CAD, are maintained in Module Families.
+DNP owns the domain-neutral Platform Foundation. Domain-specific operational
+modules are maintained in Module Families.
 
 The DNP repository must not contain:
 
@@ -38,6 +38,6 @@ rebaseline-required status, branding asset, and Module Families boundary.
 ```
 
 The check validates the repository layout, branding asset, machine-readable
-project status, immutable Module Families integration pin, external CAD
+project status, immutable Module Families integration pin, external module
 references, accepted Phase 4 gate synchronization, and current phase-status
 semantics.

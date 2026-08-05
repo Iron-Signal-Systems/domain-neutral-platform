@@ -2,9 +2,8 @@
 
 > **Document status:** Normative Platform Foundation architecture.
 >
-> **Purpose:** Preserve terminology that remains understandable across public
-> safety, municipal government, schools, finance, public works, utilities,
-> human resources, permitting, records, and future module families.
+> **Purpose:** Preserve terminology that remains understandable across
+> unrelated operational module families.
 
 ## Five-Year Clarity Rule
 
@@ -37,8 +36,7 @@ controlled dependencies on Foundation capabilities.
 
 ### Module Family
 
-A related group of modules, such as public safety, municipal administration,
-education, finance, public works, or utilities.
+A related group of operational modules with explicit domain ownership.
 
 ### Shared Resource
 
@@ -274,8 +272,8 @@ Protected Resource Target.
 
 ### Evidence
 
-Avoid when the category matters, especially because an Evidence and Property
-module may use “evidence” in a legal or custodial sense.
+Avoid when the category matters, especially because downstream modules may
+use “evidence” in a legal, investigative, or custodial sense.
 
 Use Authentication Assertion, Assurance Artifact, Decision Supporting Record,
 diagnostic record, source record, or another explicit category.

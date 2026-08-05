@@ -30,7 +30,7 @@ A compliance profile:
 
 ## Evidence Terminology
 
-Within the Foundation, proof used to evaluate a control is called an **assurance artifact**. This avoids confusion with the future public-safety Evidence and Property domain.
+Within the Foundation, material used to evaluate a control is called an **assurance artifact**. This distinguishes control-assurance material from legal, investigative, or custodial evidence owned by downstream modules.
 
 ## Current Status
 
