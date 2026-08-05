@@ -7,11 +7,11 @@
 The Platform Foundation must remain independent of any single operational
 domain.
 
-Public safety is the initial implementation focus and a demanding source of
-requirements. It does not define the limits of the Platform Foundation.
+Operational modules may expose demanding requirements, but no module family
+defines the limits of the Platform Foundation.
 
-A requirement discovered while designing a public-safety module must be
-generalized before it becomes a Foundation concept.
+A requirement discovered while designing any module must be generalized before
+it becomes a Foundation concept.
 
 ## Foundation Admission Rule
 
@@ -33,22 +33,11 @@ requires it.
 
 Domain records and workflows belong to modules.
 
-Examples include:
+This includes module-owned records, transactions, workflows, status models,
+schedules, domain taxonomies, user interactions, and acceptance criteria.
 
-- Dispatch incidents
-- Calls for service
-- Criminal or civil cases
-- Evidence custody
-- Permits and inspections
-- Invoices and payments
-- Student records
-- Work orders
-- Payroll records
-- Utility accounts
-- Fleet maintenance records
-
-The Foundation may provide shared controls used by those modules, but it must
-not define their operational meaning.
+The Foundation may provide shared controls used by modules, but it must not
+define their operational meaning.
 
 ## Neutral Foundation Concepts
 
@@ -90,30 +79,16 @@ The Foundation uses **Governed Scope** for a typed boundary that constrains
 authority, eligibility, approval, policy, data handling, or a protected
 operation.
 
-A public-safety module may define Governed Scope types such as:
+A module may define Governed Scope types such as:
 
-- `JURISDICTION`
-- `PRECINCT`
-- `RESPONSE_DISTRICT`
-- `MUTUAL_AID_AREA`
-
-A school module may define:
-
-- `SCHOOL_DISTRICT`
-- `CAMPUS`
-- `PROGRAM`
-- `GRADE_BOUNDARY`
-
-A municipal module may define:
-
-- `MUNICIPAL_BOUNDARY`
+- `REGION`
+- `SERVICE_AREA`
 - `DEPARTMENT`
 - `FACILITY`
-- `UTILITY_DISTRICT`
-- `TAXING_DISTRICT`
+- `PROGRAM`
 
 The Foundation must not require every Governed Scope to be geographic, legal,
-or public-safety-specific.
+administrative, or specific to one operational domain.
 
 ## Review Requirement
 

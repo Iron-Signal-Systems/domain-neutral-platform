@@ -5,8 +5,8 @@
 
 - Accepted database boundary: Phase 5 at `phase-5-production-database-security-boundary-complete-v1`, commit `9f8dbf9d909ef157df72b12511b165a689559093`.
 - Accepted production Go boundary: Phase 6 Step 7 at `79e9723b2dd12e813de8a8c665d08d4f61cc8fab`; static and complete validation each reported 142 PASS and 0 FAIL.
-- Phase 6 Step 8: **rebaseline required** after the governed DNP repository rename and CAD extraction changed paths frozen by the original candidate. Acceptance is not claimed, and the historical candidate gate is not a current acceptance gate.
-- Module ownership: CAD and other domain modules are maintained in the Module Families repository.
+- Phase 6 Step 8: **rebaseline required** after the governed DNP repository rename and module extraction changed paths frozen by the original candidate. Acceptance is not claimed, and the historical candidate gate is not a current acceptance gate.
+- Module ownership: domain-specific operational modules are maintained in the Module Families repository.
 - Machine-readable authority: `docs/project-status.json`.
 <!-- dnp-current-governed-status:end -->
 > **Current cross-boundary status:** Phase 5 production database security
@@ -34,13 +34,13 @@ authentication inputs, sessions, authorization, approvals, accountable
 Decision Records, governance, compliance, lifecycle, resilience, resource
 governance, observability, and integration intent.
 
-Potential consumers include public safety, municipal administration, finance,
-human resources, records management, permitting, fleet and asset systems,
-utilities, education, and future integrated services.
+Potential consumers are independently governed operational module families
+that require shared trust, identity, authorization, accountability,
+resilience, observability, and integration contracts.
 
-The Foundation does not contain CAD incidents, RMS cases, evidence custody,
-payroll, procurement, Fire or EMS workflow, student records, permits, utility
-accounts, or other module-owned business records.
+The Foundation does not contain module-owned business records, workflows,
+domain status models, user-interface behavior, or operational acceptance
+artifacts.
 
 ## Non-Negotiable Principles
 
@@ -205,9 +205,9 @@ enforcement, current stage satisfaction, finalization-once Approval Requests,
 Decision Record stage linkage, later-use approval continuity, and seven
 independent-connection concurrency proofs.
 
-The Platform Foundation remains domain-neutral. Location services,
-communications, GIS rendering, operational workstations, user interfaces, and
-module-specific workflows remain downstream architecture areas.
+The Platform Foundation remains domain-neutral. Module-specific operational
+services, user interfaces, workstation profiles, and workflows remain
+downstream architecture areas.
 
 See:
 
@@ -221,6 +221,7 @@ See:
 ### Boundaries, Trust, Authentication, and Database Enforcement
 
 - [Foundation Terminology and Domain Neutrality](foundation-terminology-and-domain-neutrality.md)
+- [Domain-Neutrality Exception Policy](domain-neutrality-exception-policy.md)
 - [Platform Boundaries](platform-boundaries.md)
 - [Authentication and Authorization Evaluation](authentication-and-authorization-evaluation-model.md)
 - [Authentication Assertion Verification and Consumption Model](authentication-assertion-verification-and-consumption-model.md)
@@ -268,8 +269,8 @@ See:
 - [Performance, Efficiency, and Resource Governance](performance-efficiency-and-resource-governance-model.md)
 - [Resource Telemetry and Performance-Regression Testing](resource-telemetry-and-performance-regression-testing-model.md)
 - [Foundation Migration Timeout and Execution Performance Standard](foundation-migration-timeout-and-execution-performance-standard.md)
-- [Client Experience and Accessibility](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/docs/architecture/user-interface/client-experience-and-accessibility-model.md)
-- [Accessibility and Inclusive Interaction](https://github.com/Iron-Signal-Systems/module-families/blob/1e017c7ab874969395fb31e030c0149116bf77cf/modules/CAD/docs/architecture/user-interface/accessibility-and-inclusive-interaction-model.md)
+- Module-owned client-experience and accessibility architecture is maintained
+  in the Module Families repository.
 - [Observability, Health, and Operational Telemetry](observability-health-and-operational-telemetry-model.md)
 
 ## Current Implementation Boundaries
@@ -278,9 +279,9 @@ The Foundation SQL and deployment boundaries are current through formal Phase 5
 acceptance. Production Go consumption is current through accepted Phase 6 Step
 7. Phase 6 Step 8 requires a governed rebaseline; acceptance is not claimed.
 
-The Foundation remains domain-neutral. CAD, RMS, workstation, interface,
-mapping, and other domain-specific records and workflows remain in Module
-Families.
+The Foundation remains domain-neutral. Module-owned records, workflows,
+workstation profiles, interfaces, and domain-specific services remain in
+Module Families.
 
 ## Accepted Phase 5 Production Database Security Boundary
 

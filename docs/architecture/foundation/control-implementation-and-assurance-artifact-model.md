@@ -12,7 +12,7 @@ Represent how a common control is implemented in a defined scope and what trustw
 
 ### Terminology
 
-The Foundation uses **assurance artifact** instead of the generic word **evidence**. This prevents confusion with the future public-safety Evidence and Property domain.
+The Foundation uses **assurance artifact** instead of the generic word **evidence**. This distinguishes control-assurance material from legal, investigative, or custodial evidence owned by downstream modules.
 
 An assurance artifact is information used to support an assessment. It is not automatically proof that a control is effective.
 

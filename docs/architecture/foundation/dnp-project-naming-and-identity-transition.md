@@ -45,9 +45,9 @@ The Domain-Neutral Platform Foundation is the shared security, governance,
 identity, authorization, resilience, observability, integration, and resource
 governance foundation used by operational module families.
 
-Public safety remains the first planned module family. Computer Aided Dispatch
-remains the first planned operational module. This naming decision does not
-move public-safety or CAD concepts into the Foundation.
+Operational module ownership, sequencing, and domain terminology are governed
+in the Module Families repository. This naming decision does not move
+module-specific concepts into the Foundation.
 
 ## Company Attribution
 

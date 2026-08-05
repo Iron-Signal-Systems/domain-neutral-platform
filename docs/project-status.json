@@ -51,7 +51,7 @@
     "acceptance_claimed": false,
     "gate_runnable_against_current_dev": false,
     "accepted_predecessor": "79e9723b2dd12e813de8a8c665d08d4f61cc8fab",
-    "reason": "governed repository identity migration and CAD extraction changed paths frozen by the original Step 8 candidate"
+    "reason": "governed repository identity migration and module extraction changed paths frozen by the original Step 8 candidate"
   },
   "next_go_step": {
     "phase": 6,
