@@ -125,3 +125,35 @@ resource-reporting scripts use only the accepted Go standard library, existing
 `pgx/v5` integration-test boundary, Bash, Python 3, PostgreSQL client tools,
 and GNU `time` supplied by the validation host. `go.mod`, `go.sum`, and
 `TOOLCHAIN` remain frozen.
+
+<!-- go-2026-5970-remediation -->
+## 2026-08-11 Dependency Security Remediation
+
+A focused vulnerability review identified `GO-2026-5970` as reachable through
+the accepted PostgreSQL dependency path.
+
+The vulnerable selected module was:
+
+    golang.org/x/text v0.29.0
+
+The remediated selected module is:
+
+    golang.org/x/text v0.39.0
+
+The dependency update changes the selected module graph as follows:
+
+    golang.org/x/mod   v0.27.0 -> v0.37.0
+    golang.org/x/sync  v0.17.0 -> v0.21.0
+    golang.org/x/text  v0.29.0 -> v0.39.0
+    golang.org/x/tools v0.36.0 -> v0.47.0
+
+`github.com/jackc/pgx/v5 v5.10.0` remains the sole direct third-party
+production dependency introduced by Phase 6 Step 3.
+
+The original Phase 6 Step 3 dependency inventory remains historical truth.
+This section records the later security-driven module-graph change rather than
+rewriting the graph accepted by the original Step 3 gate.
+
+The current module graph remains governed by `go.mod`, `go.sum`,
+`go mod verify`, the exact-module-graph validation in `scripts/check.sh`,
+and the applicable vulnerability-analysis boundary.
