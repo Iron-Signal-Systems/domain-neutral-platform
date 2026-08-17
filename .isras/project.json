@@ -1,0 +1,173 @@
+{
+  "schema_version": "26.08.15",
+  "project": {
+    "repository": "github.com/Iron-Signal-Systems/domain-neutral-platform"
+  },
+  "standard": {
+    "profile": "ISRAS-SD",
+    "authority": "testing-candidate",
+    "version": "T.26.08.15",
+    "intended_stable_version": "26.08.15",
+    "release_tag": "NOT_APPLICABLE",
+    "source_repository": "github.com/Iron-Signal-Systems/engineering-standards",
+    "source_commit": "97af98e97347f653789c7a418f5bfb375a13ed58"
+  },
+  "artifacts": [],
+  "workflow": {
+    "repository": "github.com/Iron-Signal-Systems/engineering-standards",
+    "path": ".github/workflows/validate-project.yml",
+    "commit": "97af98e97347f653789c7a418f5bfb375a13ed58"
+  },
+  "profiles": {
+    "repository": {},
+    "go": {
+      "modules": [
+        "go/platform/go.mod"
+      ]
+    }
+  },
+  "commands": [
+    {
+      "id": "build",
+      "domain": "validation",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "go",
+        "build",
+        "./..."
+      ],
+      "timeout_seconds": 900,
+      "network": "denied",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "candidate"
+      ],
+      "record_type": "validation-result"
+    },
+    {
+      "id": "format_check",
+      "domain": "validation",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "./tools/validation/check-go-format"
+      ],
+      "timeout_seconds": 900,
+      "network": "denied",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "candidate"
+      ],
+      "record_type": "validation-result"
+    },
+    {
+      "id": "known_vulnerabilities",
+      "domain": "vulnerability_discovery",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "govulncheck",
+        "./..."
+      ],
+      "timeout_seconds": 900,
+      "network": "required",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "candidate"
+      ],
+      "record_type": "vulnerability-discovery"
+    },
+    {
+      "id": "module_consistency",
+      "domain": "validation",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "go",
+        "mod",
+        "tidy",
+        "-diff"
+      ],
+      "timeout_seconds": 900,
+      "network": "denied",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "candidate"
+      ],
+      "record_type": "validation-result"
+    },
+    {
+      "id": "module_integrity",
+      "domain": "validation",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "go",
+        "mod",
+        "verify"
+      ],
+      "timeout_seconds": 900,
+      "network": "denied",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "candidate"
+      ],
+      "record_type": "validation-result"
+    },
+    {
+      "id": "static_analysis",
+      "domain": "validation",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "go",
+        "vet",
+        "./..."
+      ],
+      "timeout_seconds": 900,
+      "network": "denied",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "candidate"
+      ],
+      "record_type": "validation-result"
+    },
+    {
+      "id": "test",
+      "domain": "testing",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "timeout_seconds": 900,
+      "network": "denied",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "candidate"
+      ],
+      "record_type": "test-result"
+    }
+  ],
+  "assurance_plan": ".isras/assurance-plan.json",
+  "records": {
+    "directory": ".local/isras"
+  }
+}
