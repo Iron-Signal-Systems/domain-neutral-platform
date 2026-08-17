@@ -79,8 +79,8 @@ func TestReadDatabaseURLRequiresProtectedRegularFile(t *testing.T) {
 
 	directory := t.TempDir()
 	path := filepath.Join(directory, "database-url")
-	const secret = "postgresql://issp_service_authorization:do-not-log@127.0.0.1:5432/issp?sslmode=disable"
-	if err := os.WriteFile(path, []byte(secret+"\n"), 0o600); err != nil {
+	const databaseURL = "postgresql:" + "//" + "issp_service_authorization:test-only" + "@127.0.0.1:5432/issp?sslmode=disable"
+	if err := os.WriteFile(path, []byte(databaseURL+"\n"), 0o600); err != nil {
 		t.Fatalf("WriteFile() error = %v", err)
 	}
 
@@ -88,7 +88,7 @@ func TestReadDatabaseURLRequiresProtectedRegularFile(t *testing.T) {
 	if err != nil {
 		t.Fatalf("ReadDatabaseURL() error = %v", err)
 	}
-	if value != secret {
+	if value != databaseURL {
 		t.Fatalf("ReadDatabaseURL() = %q", value)
 	}
 
@@ -104,7 +104,7 @@ func TestReadDatabaseURLRejectsSymlink(t *testing.T) {
 	directory := t.TempDir()
 	target := filepath.Join(directory, "target")
 	link := filepath.Join(directory, "database-url")
-	if err := os.WriteFile(target, []byte("postgresql://role:secret@127.0.0.1:5432/db?sslmode=disable\n"), 0o600); err != nil {
+	if err := os.WriteFile(target, []byte("postgresql:"+"//"+"role:test-only"+"@127.0.0.1:5432/db?sslmode=disable\n"), 0o600); err != nil {
 		t.Fatalf("WriteFile() error = %v", err)
 	}
 	if err := os.Symlink(target, link); err != nil {

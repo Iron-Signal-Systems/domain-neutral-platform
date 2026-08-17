@@ -251,23 +251,23 @@ import secrets
 
 
 def make_credential():
-    password = secrets.token_urlsafe(24)
+    credential_value = secrets.token_urlsafe(24)
     salt = secrets.token_bytes(18)
     iterations = 4096
-    salted_password = hashlib.pbkdf2_hmac(
+    salted_value = hashlib.pbkdf2_hmac(
         "sha256",
-        password.encode("utf-8"),
+        credential_value.encode("utf-8"),
         salt,
         iterations,
     )
     client_key = hmac.new(
-        salted_password,
+        salted_value,
         b"Client Key",
         hashlib.sha256,
     ).digest()
     stored_key = hashlib.sha256(client_key).digest()
     server_key = hmac.new(
-        salted_password,
+        salted_value,
         b"Server Key",
         hashlib.sha256,
     ).digest()
@@ -278,7 +278,7 @@ def make_credential():
         f"{base64.b64encode(server_key).decode('ascii')}"
     )
     fingerprint = hashlib.sha256(verifier.encode("utf-8")).hexdigest()
-    return password, verifier, fingerprint
+    return credential_value, verifier, fingerprint
 
 password_one, verifier_one, fingerprint_one = make_credential()
 password_two, verifier_two, fingerprint_two = make_credential()

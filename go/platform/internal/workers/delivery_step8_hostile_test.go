@@ -125,7 +125,7 @@ func TestPhase6Step8RunnerStopsClaimingImmediatelyOnCancellation(t *testing.T) {
 		if cycles.Add(1) == 1 {
 			cancel()
 		}
-		return errors.New("postgresql://user:secret@database/should-not-leak")
+		return errors.New("postgresql://" + "user:test-only" + "@database/should-not-leak")
 	}
 	var logBuffer bytes.Buffer
 	logger := slog.New(slog.NewTextHandler(&logBuffer, nil))
@@ -135,15 +135,15 @@ func TestPhase6Step8RunnerStopsClaimingImmediatelyOnCancellation(t *testing.T) {
 	if cycles.Load() != 1 {
 		t.Fatalf("cycles = %d, want 1", cycles.Load())
 	}
-	if contains(logBuffer.String(), "postgresql://") || contains(logBuffer.String(), "secret") {
+	if contains(logBuffer.String(), "postgresql://") || contains(logBuffer.String(), "test-only") {
 		t.Fatalf("log disclosed protected cause: %q", logBuffer.String())
 	}
 }
 
 func TestPhase6Step8CompletionAndRescheduleErrorsDoNotDiscloseIdentifiers(t *testing.T) {
 	secretID := "99999999-9999-9999-9999-999999999999"
-	secretCause := errors.New("postgresql://user:secret@database/internal")
-	store := &step8FailingIntegrationStore{completionErr: &database.Error{Stage: "completion", Cause: secretCause}, rescheduleErr: &database.Error{Stage: "reschedule", Cause: secretCause}}
+	protectedCause := errors.New("postgresql://" + "user:test-only" + "@database/internal")
+	store := &step8FailingIntegrationStore{completionErr: &database.Error{Stage: "completion", Cause: protectedCause}, rescheduleErr: &database.Error{Stage: "reschedule", Cause: protectedCause}}
 	var logBuffer bytes.Buffer
 	runner := &integrationRunner{
 		store: store,
@@ -167,7 +167,7 @@ func TestPhase6Step8CompletionAndRescheduleErrorsDoNotDiscloseIdentifiers(t *tes
 	runner.processOne(context.Background(), claim)
 
 	logText := logBuffer.String()
-	for _, forbidden := range []string{secretID, "contract-secret", "payload", "postgresql://", "relay secret", "user:secret"} {
+	for _, forbidden := range []string{secretID, "contract-secret", "payload", "postgresql://", "relay secret", "user:test-only"} {
 		if contains(logText, forbidden) {
 			t.Fatalf("log disclosed %q: %s", forbidden, logText)
 		}

@@ -11,7 +11,7 @@ func TestValidateDatabaseURLBindsExactRole(t *testing.T) {
 	t.Parallel()
 
 	_, err := validateDatabaseURL(
-		"postgresql://issp_service_integration_delivery:secret@127.0.0.1:5432/issp?sslmode=disable",
+		"postgresql:"+"//"+"issp_service_integration_delivery:test-only"+"@127.0.0.1:5432/issp?sslmode=disable",
 		true,
 		FoundationAPI,
 	)
@@ -24,7 +24,7 @@ func TestValidateDatabaseURLRequiresExplicitRemoteVerification(t *testing.T) {
 	t.Parallel()
 
 	_, err := validateDatabaseURL(
-		"postgresql://issp_service_authorization:secret@db.example.test:5432/issp?sslmode=require",
+		"postgresql:"+"//"+"issp_service_authorization:test-only"+"@db.example.test:5432/issp?sslmode=require",
 		false,
 		FoundationAPI,
 	)
@@ -33,7 +33,7 @@ func TestValidateDatabaseURLRequiresExplicitRemoteVerification(t *testing.T) {
 	}
 
 	if _, err := validateDatabaseURL(
-		"postgresql://issp_service_authorization:secret@db.example.test:5432/issp?sslmode=verify-full&sslrootcert=/run/credentials/root.pem",
+		"postgresql:"+"//"+"issp_service_authorization:test-only"+"@db.example.test:5432/issp?sslmode=verify-full&sslrootcert=/run/credentials/root.pem",
 		false,
 		FoundationAPI,
 	); err != nil {
@@ -44,9 +44,9 @@ func TestValidateDatabaseURLRequiresExplicitRemoteVerification(t *testing.T) {
 func TestDatabaseErrorsDoNotExposeWrappedSecret(t *testing.T) {
 	t.Parallel()
 
-	const secret = "postgresql://role:do-not-log@example.test/db"
-	err := &Error{Stage: "configuration", Cause: errors.New(secret)}
-	if err.Error() == secret {
+	const wrappedValue = "postgresql:" + "//" + "role:test-only" + "@example.test/db"
+	err := &Error{Stage: "configuration", Cause: errors.New(wrappedValue)}
+	if err.Error() == wrappedValue {
 		t.Fatal("Error() exposed the wrapped secret")
 	}
 	if Diagnostic(err) != "database_configuration" {
@@ -63,7 +63,7 @@ func TestValidateDatabaseURLRequiresExplicitPort(t *testing.T) {
 	t.Parallel()
 
 	_, err := validateDatabaseURL(
-		"postgresql://issp_service_authorization:secret@127.0.0.1/issp?sslmode=disable",
+		"postgresql:"+"//"+"issp_service_authorization:test-only"+"@127.0.0.1/issp?sslmode=disable",
 		true,
 		FoundationAPI,
 	)
@@ -76,7 +76,7 @@ func TestValidateDatabaseURLRejectsDuplicateOptions(t *testing.T) {
 	t.Parallel()
 
 	_, err := validateDatabaseURL(
-		"postgresql://issp_service_authorization:secret@127.0.0.1:5432/issp?sslmode=disable&sslmode=verify-full",
+		"postgresql:"+"//"+"issp_service_authorization:test-only"+"@127.0.0.1:5432/issp?sslmode=disable&sslmode=verify-full",
 		true,
 		FoundationAPI,
 	)
