@@ -10,13 +10,13 @@
     "intended_stable_version": "26.08.15",
     "release_tag": "NOT_APPLICABLE",
     "source_repository": "github.com/Iron-Signal-Systems/engineering-standards",
-    "source_commit": "5621422a2d88c771bdac2614571ededae0dc01f3"
+    "source_commit": "29c0839d7a86a66ede9dadd50eebfe3e2ba20c8c"
   },
   "artifacts": [],
   "workflow": {
     "repository": "github.com/Iron-Signal-Systems/engineering-standards",
     "path": ".github/workflows/validate-project.yml",
-    "commit": "5621422a2d88c771bdac2614571ededae0dc01f3"
+    "commit": "29c0839d7a86a66ede9dadd50eebfe3e2ba20c8c"
   },
   "profiles": {
     "repository": {},
