@@ -63,7 +63,6 @@ The Foundation SQL test framework must test the requirements that can be demonst
 ## Related Documents
 
 - [Performance and Efficiency Goals](../../goals/performance-and-efficiency-goals.md)
-- [Client Experience and Accessibility](client-experience-and-accessibility-model.md)
 - [Observability, Health, and Operational Telemetry](observability-health-and-operational-telemetry-model.md)
 ## Resource-Aware Foundation Test Runs
 
