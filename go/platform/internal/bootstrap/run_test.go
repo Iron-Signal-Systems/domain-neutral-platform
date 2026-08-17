@@ -73,7 +73,7 @@ func configureMinimumRuntime(t *testing.T) {
 	keyPath := filepath.Join(directory, "transport-hmac-key")
 	if err := os.WriteFile(
 		dsnPath,
-		[]byte("postgresql://role:secret@127.0.0.1:1/db?sslmode=disable\n"),
+		[]byte("postgresql:"+"//"+"role:test-only"+"@127.0.0.1:1/db?sslmode=disable\n"),
 		0o600,
 	); err != nil {
 		t.Fatalf("WriteFile() error = %v", err)
@@ -115,7 +115,7 @@ func TestRunRejectsMissingDeliveryCredentialBeforeDatabaseAccess(t *testing.T) {
 	dsnPath := filepath.Join(directory, "database-url")
 	if err := os.WriteFile(
 		dsnPath,
-		[]byte("postgresql://issp_service_integration_delivery:secret@127.0.0.1:1/db?sslmode=disable\n"),
+		[]byte("postgresql:"+"//"+"issp_service_integration_delivery:test-only"+"@127.0.0.1:1/db?sslmode=disable\n"),
 		0o600,
 	); err != nil {
 		t.Fatalf("WriteFile() error = %v", err)

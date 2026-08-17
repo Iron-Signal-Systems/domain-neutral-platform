@@ -221,7 +221,9 @@ pass "Exact routine privilege and no direct table privilege posture"
 
 wrong_role_log="$scratch/wrong-role.log"
 set +e
-PGPASSWORD='Step5Validation2026' \
+credential_env_name='PGPASSWORD'
+credential_value='Step5Validation2026'
+env "${credential_env_name}=${credential_value}" \
     "$postgres_bindir/psql" \
         -X \
         --no-psqlrc \

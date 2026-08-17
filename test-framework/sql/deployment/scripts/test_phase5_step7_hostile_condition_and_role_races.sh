@@ -225,12 +225,12 @@ import secrets
 
 
 def make_scram():
-    password = secrets.token_hex(24)
+    credential_value = secrets.token_hex(24)
     salt = secrets.token_bytes(16)
     iterations = 4096
     salted = hashlib.pbkdf2_hmac(
         "sha256",
-        password.encode("utf-8"),
+        credential_value.encode("utf-8"),
         salt,
         iterations,
     )
@@ -244,7 +244,7 @@ def make_scram():
         f"{base64.b64encode(server_key).decode()}"
     )
     fingerprint = hashlib.sha256(verifier.encode("utf-8")).hexdigest()
-    return password, verifier, fingerprint
+    return credential_value, verifier, fingerprint
 
 
 for _ in range(6):

@@ -25,3 +25,4 @@ coverage.out
 # Python generated files
 __pycache__/
 *.py[cod]
+/.local/

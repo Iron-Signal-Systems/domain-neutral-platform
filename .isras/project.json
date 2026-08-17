@@ -1,0 +1,210 @@
+{
+  "schema_version": "26.08.15",
+  "project": {
+    "repository": "github.com/Iron-Signal-Systems/domain-neutral-platform"
+  },
+  "standard": {
+    "profile": "ISRAS-SD",
+    "version": "26.08.15",
+    "release_tag": "isras-v26.08.15",
+    "source_repository": "github.com/Iron-Signal-Systems/engineering-standards",
+    "source_commit": "29c0839d7a86a66ede9dadd50eebfe3e2ba20c8c"
+  },
+  "artifacts": [
+    {
+      "kind": "sha256-manifest",
+      "name": "SHA256SUMS",
+      "sha256": "9f1f19eadeaf0a38eb12b20c71db64b2efb96cf5a9b58f02e9d22df748921a05",
+      "sha512": "925df625342e7e1c96b891830ae4d3400bf585e8aa6a73f905901101cb1d43705c622018cbd44d338cea14b2773ac1a101a0e5c639aec273e568a0568687a096"
+    },
+    {
+      "kind": "sha512-manifest",
+      "name": "SHA512SUMS",
+      "sha256": "1388526d54bf5b83d166393c5e9f00fe81cab929214fdb46e84fd2b73e5b0c7d",
+      "sha512": "a5a14efd77e0bbc3d9b723c3cd893317816eb60af8cd085a5ecb44457483f0c6d84897071c7ca511f3cbfd16eebf5675073b298d73a55ad20723a26ac74a7dd7"
+    },
+    {
+      "kind": "contracts",
+      "name": "isras-contracts.tar.gz",
+      "sha256": "a826b34ce6cdfa2a7e9b7115ce6f04095827b1e8328e7316ce7f02abc0e71c86",
+      "sha512": "052f07f6c056a4d938944ab4ea9cd4f241bcef34f5993a2e168b0ef2cf6785a66b4807a2549efb3900eeaf83ba6b649004d37ee2c566e0bdaf8bba2150b3fb2b"
+    },
+    {
+      "kind": "framework",
+      "name": "isras-project-framework.tar.gz",
+      "sha256": "473160aa1335383d84b5446aa8e49c85d1b32d76d3e40978c70bbf1dbe951a52",
+      "sha512": "6cc8a536dfab1bc647238ec4381462ff9ffbe7fb536b8c39eaa250e7ae50c5b3c0d2e46672a3e940fbf7085f6a68d2f4eee3018e44f9185e92e6b07fbebaa633"
+    },
+    {
+      "kind": "validator",
+      "os": "linux",
+      "arch": "amd64",
+      "name": "isras-validator-linux-amd64",
+      "sha256": "6d85bd757f104a16d5365067fa25eebf9038f4a26b735e9e327044c23edefd81",
+      "sha512": "2e3043781c29b18755b962210b87204dd17231ddd584bef17589d8931683cf3767a27127df71999b5504ef4a262916352a4ef04ed83606d919b97f7c98b19f8f"
+    },
+    {
+      "kind": "provenance",
+      "name": "provenance.json",
+      "sha256": "f170df5c5382710c31fe51a1b5e790ee46f867684928abf36facaaab7d300234",
+      "sha512": "d0d7c8805e3d89b6d2bb2f958b100f3d77d1c018c5c3aee89ef82eb0fce7e68a6aded36ca5db574b0070957d8d954e585676c5aeb642df6f949ab3465290c683"
+    }
+  ],
+  "workflow": {
+    "repository": "github.com/Iron-Signal-Systems/engineering-standards",
+    "path": ".github/workflows/validate-project.yml",
+    "commit": "29c0839d7a86a66ede9dadd50eebfe3e2ba20c8c"
+  },
+  "profiles": {
+    "repository": {},
+    "go": {
+      "modules": [
+        "go/platform/go.mod"
+      ]
+    }
+  },
+  "commands": [
+    {
+      "id": "build",
+      "domain": "validation",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "go",
+        "build",
+        "./..."
+      ],
+      "timeout_seconds": 900,
+      "network": "denied",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "release"
+      ],
+      "record_type": "validation-result"
+    },
+    {
+      "id": "format_check",
+      "domain": "validation",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "./tools/validation/check-go-format"
+      ],
+      "timeout_seconds": 900,
+      "network": "denied",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "release"
+      ],
+      "record_type": "validation-result"
+    },
+    {
+      "id": "known_vulnerabilities",
+      "domain": "vulnerability_discovery",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "govulncheck",
+        "./..."
+      ],
+      "timeout_seconds": 900,
+      "network": "required",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "release"
+      ],
+      "record_type": "vulnerability-discovery"
+    },
+    {
+      "id": "module_consistency",
+      "domain": "validation",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "go",
+        "mod",
+        "tidy",
+        "-diff"
+      ],
+      "timeout_seconds": 900,
+      "network": "denied",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "release"
+      ],
+      "record_type": "validation-result"
+    },
+    {
+      "id": "module_integrity",
+      "domain": "validation",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "go",
+        "mod",
+        "verify"
+      ],
+      "timeout_seconds": 900,
+      "network": "denied",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "release"
+      ],
+      "record_type": "validation-result"
+    },
+    {
+      "id": "static_analysis",
+      "domain": "validation",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "go",
+        "vet",
+        "./..."
+      ],
+      "timeout_seconds": 900,
+      "network": "denied",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "release"
+      ],
+      "record_type": "validation-result"
+    },
+    {
+      "id": "test",
+      "domain": "testing",
+      "profile": "go",
+      "working_directory": ".",
+      "argv": [
+        "go",
+        "test",
+        "./..."
+      ],
+      "timeout_seconds": 900,
+      "network": "denied",
+      "repository_mutation": "denied",
+      "modes": [
+        "development",
+        "commit",
+        "release"
+      ],
+      "record_type": "test-result"
+    }
+  ],
+  "assurance_plan": ".isras/assurance-plan.json",
+  "records": {
+    "directory": ".local/isras"
+  }
+}

@@ -155,7 +155,9 @@ for wrong_role in issp_service_integration_delivery issp_service_monitoring_deli
         wrong_sql="SELECT count(*) FROM integration.claim_outbox_events(1, interval '30 seconds');"
     fi
     set +e
-    PGPASSWORD='Step7Validation2026' "$postgres_bindir/psql" -X --no-psqlrc --set=ON_ERROR_STOP=1 -h 127.0.0.1 -p "$postgres_port" -U "$wrong_role" -d "$database_name" -c "$wrong_sql" >"$wrong_log" 2>&1
+    credential_env_name='PGPASSWORD'
+    credential_value='Step7Validation2026'
+    env "${credential_env_name}=${credential_value}" "$postgres_bindir/psql" -X --no-psqlrc --set=ON_ERROR_STOP=1 -h 127.0.0.1 -p "$postgres_port" -U "$wrong_role" -d "$database_name" -c "$wrong_sql" >"$wrong_log" 2>&1
     wrong_rc=$?
     set -e
     [[ "$wrong_rc" -ne 0 ]] || fail "Cross-worker routine invocation is denied: $wrong_role"

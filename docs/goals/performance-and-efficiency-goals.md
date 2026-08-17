@@ -36,7 +36,6 @@ This is a development constraint, not a final production sizing recommendation. 
 These goals are represented through:
 
 - [Performance, Efficiency, and Resource Governance](../architecture/foundation/performance-efficiency-and-resource-governance-model.md)
-- [Client Experience and Accessibility](../architecture/foundation/client-experience-and-accessibility-model.md)
 - [Observability, Health, and Operational Telemetry](../architecture/foundation/observability-health-and-operational-telemetry-model.md)
 
 SQL migrations `093–095` provide the initial structural implementation.
