@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   validate:
-    uses: Iron-Signal-Systems/engineering-standards/.github/workflows/validate-project.yml@616bd883a2a7b3f030ebacfb44b5a6e86fcffd01
+    uses: Iron-Signal-Systems/engineering-standards/.github/workflows/validate-project.yml@5621422a2d88c771bdac2614571ededae0dc01f3
     permissions:
       contents: read
     with:
