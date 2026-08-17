@@ -216,7 +216,18 @@ func TestRunWatchdogStopsOnCancellation(t *testing.T) {
 func TestRunWatchdogReportsDisappearedSocket(t *testing.T) {
 	t.Parallel()
 
-	socketPath := filepath.Join(t.TempDir(), "missing.sock")
+	directory, err := os.MkdirTemp("/tmp", "dnp-ph-")
+	if err != nil {
+		t.Fatalf("MkdirTemp() error = %v", err)
+	}
+	t.Cleanup(func() {
+		_ = os.RemoveAll(directory)
+	})
+
+	socketPath := filepath.Join(directory, "missing.sock")
+	if len(socketPath) > maxUnixSocketName {
+		t.Fatalf("test socket path length = %d, maximum = %d", len(socketPath), maxUnixSocketName)
+	}
 	notifier, err := Load(
 		mapLookup(map[string]string{
 			EnvNotifySocket: socketPath,
