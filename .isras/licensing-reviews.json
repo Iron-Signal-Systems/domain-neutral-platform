@@ -1,0 +1,2760 @@
+{
+  "schema_version": 1,
+  "licensing_declaration_sha256": "9952106a4a6446f3dfe4c549e3dda7ca353678de6a76dd53469bfb73376e9826",
+  "files": [
+    {
+      "path": ".github/workflows/isras-validation.yml",
+      "state": "LICENSE_GENERATED",
+      "classification": "generated",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "20b332a35ef062608cf98e4c17c564252f650b892e55c2741e2f6175252bb936",
+      "rationale": "This deterministic generated file inherits the declared repository license and is hash-bound to this reviewed content."
+    },
+    {
+      "path": ".gitignore",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a5664e9eeab67e0a472cd2674408a6bee446d97e8bf74c7e8cb65dfc014d994c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": ".isras/adoption-verification.json",
+      "state": "LICENSE_GENERATED",
+      "classification": "generated",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "aaaa1c20edd7fb7d28280a83abf31908712aa611de00edc42c2d0bab5354ce25",
+      "rationale": "This deterministic generated file inherits the declared repository license and is hash-bound to this reviewed content."
+    },
+    {
+      "path": ".isras/assurance-plan.json",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "d11d92847db3799926e1a5837eef6c61a878c08d9d4b6a24ebd0986d3d56e152",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": ".isras/project.json",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "5f35b2da707fa16d3aebc60d724f0745cb1ab680067b307b1b20b354ab7303f5",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": ".isras/vulnerability-tools.json",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "58201c0159221a02e85d5c9f7cf80eba2297d9d0bca55f81cb165e77df05ce49",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "AGENTS.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "fe15e502990785acb0287210e8e888763e2f5cde725b0eb5b7b2c0b6f8ad1dd5",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "SECURITY.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "9a325655d0623601b22b737e2ec19478c818879e5f9cae4cb41dc258f2fb2aaf",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3177a17de4e94359ec4e998aa0be7e187409537dd6d8103f4ad1bfe05e71c421",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "26a783663df41a8430320c1419636fdb08a90baf4671f4bf9b5580bf3ed05118",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/backend-services/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "263987cb9f9e24b936f0878bc6bba4b4e5e82c2ad26a09c29cb5eb94d4901c9a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/backend-services/location-service-architecture.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "553df84c8417f3485129a1f9313cb5153d608d8b6c5d696cffbc23dd1fdc40db",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/backend-services/phase-6-step-1-production-go-service-contract.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "fbf81da1c858a12d7f6117ec73842c6d9598fb839672f9d301f6ba5d5317a91c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/backend-services/phase-6-step-2-production-go-workspace-and-build-baseline.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "6cf5ebef593b5f5e6b9468d4c3890e768ec128b8fc9b5cb3f7f3202a62c2261d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/backend-services/phase-6-step-3-runtime-bootstrap-and-postgresql-connectivity.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "44afdf77a0a471ea0d81541395054371d8bb1b6eb1d8ffbfc472dcf534eb3df5",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/backend-services/phase-6-step-4-process-host-integration-and-hostile-runtime-validation.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a4f106b7aae9355820a9ed1d6338c95eff7f930989d846820e3008c220f79c69",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/backend-services/phase-6-step-5-controlled-foundation-api-adapter.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "5639e742e207e2324dad14fa4c47ad627a9dcac3a11223f9baa8d60af1ae3db9",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/backend-services/phase-6-step-6-authenticated-request-and-transport-boundary.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f8aa20e86789e2a07a513fa4ad4cdf2a44486c8605d78fdd2ddd0606e7955a75",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/backend-services/phase-6-step-7-integration-and-monitoring-delivery-workers.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "dac884f46342ad26a549bf7d38171ee54347566ec68f9f7b743e051551f196a9",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/backend-services/phase-6-step-8-hostile-failure-concurrency-and-resource-validation.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "320616001c90867c7fc4f7b0a65915558868b52cdd63c31c7fc8a8c209fa0053",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/backend-services/production-go-service-boundary-and-runtime-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "0ddcae5c5cde8c4508fedb387c6912426ab67cd0aeef3ce352d895e9c0814972",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/communications/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "8384ea93cb0cc300cb5b027e2aaaaaf0ca72523d2c9a201ddbc391925cfa0db5",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/communications/resource-subscription-and-live-update-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "0e0e6bc443b01fef9ccd31401d8bf3c3774f94e2e62b3ae6dafb17cf9f0578c1",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/external-system-independent-observability.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3d0b3a5ad31e3cd4a119fec92793b2261502a9708ac69fb79a69fc2f03066d81",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "fa8cfa69e350630154e6ad489ff29a55990d7e8c01fac97c9f231a5114862485",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/approval-framework.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "49581f64fe5e1639a9a55e9b4bc28976bcaee62e0720324063b75f9838c32deb",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/approval-independence-and-separation-of-duties-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3cad6e88aa3e3414512a97f36dfb1b76f3a436da222f81f3a0e91b9b27c535af",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/authentication-and-authorization-evaluation-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "39308164330ae2a54daac9eff9d18628a2b34348f01d627480543eab7937cd65",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/authentication-assertion-verification-and-consumption-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "19186344141db1c174be9337bf499eab00d16a56b4ada7413ab92e0ec9f3bbbd",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/authority-and-authorization-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "ff9fb3e4f4bb1b9bd6031848d06f97118c00f0eb40078e16a5757d47378c9e73",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/authorization-decision-and-lease-issuance-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a509d83786e632479190719be97800b1b8d404bd67fdf5b3659cf7362b2cd212",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/authorization-evaluation-contract.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "5c84c5d753ba4cb9ea3e65be990483d211f34bceef934f781f3ead5e3d64d4af",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/authorization-lease-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3b2b37891fd450710b1e61551e22513e8229d67da26664b48a47272e499befeb",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/common-security-control-catalog.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "58eaeabb8e4e5db05665a8887abbb17f2aa177c5fb7546dafa6568fe3c26ca39",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/compliance-and-control-framework.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b0670c5e25a5c2e112916ab903cfbb1cd9c95dfbd3edfceefefd966a272fb70f",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/compliance-profile-versioning-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a87299b17d15d2809b6fe781c009500ca50ad43f12b604edbb694848711717ca",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/control-implementation-and-assurance-artifact-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "8f855f8eb72f24e5bc790d19767ab375c2c18e27fa69993c9784f27d32d16adf",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/data-classification-and-information-governance-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "bc0a25e89fa7c76ef71ffb271070e46006e3f7b79ec9735a94c04df9aed6fabd",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/database-security-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "bbc8db26671f9a8d51c7bd19624254f28cd5da8618cba751cf800ddbcbb9cc99",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/decision-record-repository.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "5fe80f4284b01ff1e1ca3c020ea5126b3daf1498d3504988515c76188194fd2a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/dnp-project-naming-and-identity-transition.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "97d183a2a031483d849c1c96003807bdf6d6315c0e1ac1ce7c780f15be7aac15",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/domain-neutral-foundation-principle.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "15488115853140cf26925535fc179a1b71e73651b6addd94a67f4340092e3a5a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/domain-neutrality-exception-policy.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "95e37b33f1253f94d9a9fc4953caee23aa475ef5257bf042d9596a1dfbd1652f",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/foundation-migration-timeout-and-execution-performance-standard.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "38ba574177ee30fe4b09492795238b674be107ae21bd4b1bf49e6de14f63a942",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/foundation-terminology-and-domain-neutrality.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "bb64f0c46c479b966a90526e8f4e381d97b1777e03e8a4384c659fb3823ecc8f",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/governed-document-and-policy-versioning-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f5bbfa1d9186909988ce84363dfb9e58f0382489ded85c1b636e9ac79eee44e9",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/lifecycle-versioning-and-historical-lineage-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "d23d872b28d8612c7326e80e1bda8734164b07d6adf2cdf132b74d28222b105d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/module-family-repository-integration.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "407140a2681694704602f0c139e55303f5db91eb24ae33d1b14af15bf6b0f894",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/observability-health-and-operational-telemetry-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "6192b3f905dd8985269567120ed1bf3d654c4a45e5b15e43079fea305f824508",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/organization-and-governed-scope-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "836660ff5ca552f5a9354b98644c7460dcbf99758caa50ca150c4220bed28d5a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/organizational-attestation-and-access-eligibility-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "cb1ee9aa72a29ad688548fb8bf06429c83762ead55925849b8b4bce275cb2b45",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/performance-efficiency-and-resource-governance-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "2e2137b4a492ec49820dd150d217ec29f2deab1f575e5fd22d858de04c3429d7",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/phase-1-authentication-assertion-acceptance.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "8f8c60f4e22dbc503611e622545c14ac1fc16115262164b441f33e3a06aa5743",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/phase-2-session-establishment-step-up-and-lifecycle-acceptance.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "7ea960a5a36b4dd9878618595fd37f0e8279f4ecb035f43f4dec6e8e03089354",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/phase-2-step-2-session-establishment-and-step-up-acceptance.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "c70661f58a2bced5fa644347d1958180f08eb648403aeb304d2b8cb404e141bf",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/phase-3-authorization-decision-and-controlled-lease-acceptance.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "5d69bcb8bd6e1b4c97784803419d0a3029e0aea460010931eae1998742550765",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/phase-4-approval-independence-and-separation-of-duties-acceptance.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "d3484b5c13764f43d285c2e59ff47f09de29cd215321f809f6104073b2978c50",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/phase-5-production-database-security-boundary-acceptance.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "8172be8bd2f77cded3da8755ce0ae9e143aef75820c8175b6ed3f383df0caa92",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/phase-5-step-2-deployment-role-topology.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b701bc015ac735d42027b6d34442764b9235412b35b923d9452aaa5dacb930a7",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/phase-5-step-3-ownership-and-default-privileges.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "fa5ae461fac5dc8cff0ed1c8896f76568e656536dcb9844ffe5e91b86bccbd6a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/phase-5-step-4-least-privileged-runtime-grants.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "d32731e6f055e27c2ae1a19a6f05526b041729ad878dbbd58bef502cc050a970",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/phase-5-step-5-review-and-validation-roles.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "0e5f9b08bff7a92d0e57b0a89c0b451987d388520596667cdd394447c3cfc1e8",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/phase-5-step-6-break-glass-and-credential-lifecycle.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "6f8903e6546ab03f85930f29dc6b0dd3bd1a798f1c320b711cadb758f9c2b08c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/phase-5-step-7-hostile-condition-and-role-race-validation.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "9563500843a97b85e618220306dd5fa14d7993f089154c060c2d8d4ad720674c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/platform-boundaries.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "7e00df41891475f686b4a8f3814ea97e756c8722112536153c37725b42dee5c4",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/production-database-role-ownership-and-runtime-privilege-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "4cc977d3eac7b6d003c00e2210dd1097db777bea5b1d8483fa0243ece70e0a19",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/repository-boundary-synchronization.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3bac2c0cb1b92ab76e786e33e2aa8a94d520ba98fe6ad9bb050fdf64ee224349",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/resilience-availability-and-recovery-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b44c90e7706e22802df7a56128e8f78243170d8384a7af1e45fcb10a890e4331",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/resource-telemetry-and-performance-regression-testing-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "fe50bbf77f60e971e120bda677c108d8cefbbfcaa8664febb4c956a6eead75fa",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/risk-assessment-and-treatment-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "54de09e6bfa561d303ef0d74ab95daef58809763497be568be690d778b78ddcd",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/schema-naming-conventions.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f073dedb05ef433a675ecc7d970942db7f77fa8033d02b6a79a57bb7094e8711",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/security-finding-exception-and-remediation-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "8841d7f514fb615698e24bc96b4d22fc878c85a163bd1975b11048e7f108f42d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/service-participation-and-federation-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "2bc56ea71cd3a30fc10cc005defc531ddaa5d5516eb0ea22b4c8af803a6187dc",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/session-establishment-step-up-and-lifecycle-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "1fdb6b0d8b1decbcc3e5c73725170e9553e15253d0a277cd23d01b2f2089aff1",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/sql-migration-map.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a67422e75b8b61dcf0828a07cdd19cc0b34fe1fc84f6d576089da88aa30c914d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/foundation/threat-and-abuse-case-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "327e10b1c68ced06406313a73c3e90f0d8cd73cea5866c3201b240c25e6666e1",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/gis-and-mapping/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "9fef33a9b84e2c64c1152fa59bd7b357dfdf099cdb02c307213064dd28f97bdf",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/gis-and-mapping/map-rendering-and-data-delivery-architecture.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "1b38d2748fb250e3fb441bb9dcb4357795075a00412445f287777ec34cde7b95",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/host-software-configuration-and-runtime-integrity-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "55a0b68d8634c76efde61c966f58466f9d608ed5bf9b7fa23837d49984588144",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/platform-engineering-principles.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "5f452c531418220a2fec5a80963ce05bc9cf6ce44ec20841d098b38e09a0a84d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/postgresql.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "87d96815079ed10fb011f998ffd78df5939018a06e592dd9a17e146a69c2b130",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/software-supply-chain-and-release-integrity-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "d097028b3dcfcfb2f73964a5b226e40f3d6bc295ebef2b9ef2da9687b0f2945e",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/architecture/verification-validation-and-acceptance-governance-model.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "0a942e15d0ffbe5e0107b5b2830182257bc3a9077d18c60db7b841fb3c37a7f6",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/assets/branding/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a4aff43c588ac5c72f7fccdbf7f21930db52edbafd765388e8602ac927aabf83",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/assets/branding/dnp-foundation-crest.png",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "d916368762afcd55751ed4b91d7aa4c9138fc5dc9b18423794247abe2d7d8256",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "docs/compliance-profiles/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a55910c0ff7e47ae3c1b6c3f4de5318d571e29e5ee3f419c47fa6d17fdd1286a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/goals/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a38918ad4844e0deb013bc5fdba393e8ed06949751e5cf8e486352afc16351bc",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/goals/operational-simplicity-and-supportability-goals.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "5d90d59a737edd9c53b48bbe93e2098b3fc1275b290d36b3e8e7afd9fdedf4cf",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/goals/performance-and-efficiency-goals.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "df0583a2d7cdec6141f7b4d128cda1381a400e4d46ac049306b4d64c86764ffa",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/goals/two-person-concept.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b6132cb8742358dd663dd27af8e88b03080327cecf51c9aa9c915a0f78d02ab2",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/module-migration-drift-report.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "7569e22f3a7650e8b10181eab0ce184044f6788737cb732fc64c06de7b3eca70",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "docs/project-status.json",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "87633058e69bebf17cc5c9a49e6072862a9f0c9beeb47b5c65427a814e10b89a",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "go/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "c61223f70d10ceeadbd48bf472fb5a7a76174fb52a961c551e320dbfc3719df6",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/.gitignore",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a1a8ec65dee6b90ac6f2b74c0942cda4f9ff68a43ab0a42b0d5730e1f184f3f0",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/DEPENDENCIES.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "1416d10a48e58fa4b677da241449e5ad82cd7f9cae02c8986869f689274bcce8",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "8afb3c0698c642049220f78e1b22232837cd0288e94e012eafe3455ce32c6bee",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/TOOLCHAIN",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "df792af9492a632fb3caf3e4ba64a268594dfcd36ce0d8f8a909de9b6c526c93",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "go/platform/cmd/foundation-api/main.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "4e1c1270275f1b1612a14776a137e2770269b630546b264998433f5807430057",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/cmd/integration-delivery-worker/main.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "202ee4dc70ea1c9071e7d290945575ab8e7ef48ef279c38fda07ac5e4be771fe",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/cmd/monitoring-delivery-worker/main.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "294a2b2f1b0da3c91cd7c876d960c490afb450df57fceb6ed4585a40ed056d5c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/deployment/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "e272e406297f3ed1fc14e73c4a8e5dfbd7cfe375654edb8962d23ee9a21b5ae7",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/deployment/systemd/iron-signal-foundation-api.service",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "93a69fa2c98cc7f52ed78faace3864e9a47ba14dd620a9e12819353438036ba4",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "go/platform/deployment/systemd/iron-signal-integration-delivery-worker.service",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "d50f1dcf93270fef63d64515887101e4c912efe4066b84ac127b593d4e8d370f",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "go/platform/deployment/systemd/iron-signal-monitoring-delivery-worker.service",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "23c334b3609d337e15b655d1f69de7a57baada7596522fd6437794a653193942",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "go/platform/deployment/sysusers.d/iron-signal-platform.conf",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "19dee63a6beacd5f22db7d8e6eb3ae834e167101d652b2f9ff64f285d590a705",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "go/platform/go.mod",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "e0e150cf65d06b9e1b750c6d5c21b9c8a1f270ae2cd973f810f1fd62b1a0c7e9",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/go.sum",
+      "state": "LICENSE_GENERATED",
+      "classification": "generated",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f65654519c652388e9f315cef1ef299e86fdc964d8d18332c05dbdb51a40c7fb",
+      "rationale": "This deterministic generated file inherits the declared repository license and is hash-bound to this reviewed content."
+    },
+    {
+      "path": "go/platform/internal/authentication/handoff.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "d1a4fa6b4f9e02719416a66f18e59e92183de2d785671aad625a48c4aa0ae245",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/authentication/handoff_step8_hostile_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "0da778974002f831ea4d911ae314ed701d9738ca831a72c90fc15f9f7e8210e3",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/authentication/handoff_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "79076751bd14dde6c1c84f4af614ce4f817cacf392fe15e061ddbaea8814e4c1",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/bootstrap/run.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "36bb015ba8f288c09e930eb1f13248faefcb9167d44b34c678971e367ed116db",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/bootstrap/run_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "5f71170f985f663abc526562205632cb3f2e643f0f3ee1d4c1965f035b29329c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/config/config.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "597fa83b2427879bcac9408215172ed347917ae08b4d8e49ae724f6ece88873e",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/config/config_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "9c136ef207144774a4e55bafb3cf54da77348f2a553fa2309c98d5d817af9173",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/config/delivery_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "c072a37d8b4e08dca2c9feba6a92a33ac46423903c65e286b20c0816f9b01ce1",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/config/doc.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "c892d08d376195da7ac87b761d9b8e4b5d55e124aabaf043df11a3645608c5e9",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/database/delivery.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "98848d24511450423221d5425c6ba36e2cade21667c66852b9174aad9338ef60",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/database/identity.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b523437d3da6879e8f900604ef3e74eff49ab3528b4373753a643e95aa61e789",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/database/identity_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "48b3b7647df21e0a8c397a0a1928c0703d6ab0b3386677208b523416c4e20082",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/database/pool.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a68fd4d43caa91ef144349390896a89c2c5e7696ee1d02295cf02efa4a43f478",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/database/pool_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "729d13881b55883364fa1545e71f5f11ee8ca51b0b5cfeea00079060733a0c8a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/database/runtime_integration_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "4312077aa4db90f6b603122ba75f484f157b1cee51477a9726e357d5330d839c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/foundation/authorization_policy.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "4cafeb7448b17e262be5cae9f8ecaa7ddd3a61680a9d81fab33ea6329673a15b",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/foundation/authorization_policy_integration_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "4bab686189e51e56c19ea7b751e7c29914c860b02a5ac4e28910bcb0a2112b50",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/foundation/authorization_policy_step8_integration_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f988867a31e01fce2a4867756da8ee507144b5a401d80dc8047c06eed6180d77",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/foundation/authorization_policy_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "6c1354651c7779ca93076c2ad9ec8109bc438438420be6fb192a530a2532f41d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/foundation/doc.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "431d17adc4782420336a423101c28f0d038f3e78da41a33dc6633ee4ddc98280",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/observability/doc.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "8d501bf74dcdc23547508ab60b47dca73d8da05ba796c914aa5d2a1cfb37d915",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/observability/logging.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "96dadf393d39071099a2b416f9d52429b32de940b403aa32fb9e02b9ab7d92f0",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/observability/logging_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b667f29ca1752408705e0c3ad9065c323e0af83dc253ffbf57e4c133471d90da",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/processhost/notify.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "080ebe179034150aa05dc8ccfaa5bd504b3dfee2da69355384045be9bff31715",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/processhost/notify_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "40c9be9348afeee92cb218244f28c0c1a63ebaeacda8b359687bffc8f1bf8c2a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/transport/business.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "30e1803c3374a8f2fc30ca94bedaa01f1aec1c37f9e17f6746f6bfaa3b0a8c43",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/transport/business_step8_hostile_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "594084f35fb42542f9992d47b58b536738c0a9332663d31c1bfa6ed21f596353",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/transport/business_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "9c9b9cbfa972c13bfc2f4faf59b7c0c309824bba6f9d1229345547ba9a54f894",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/transport/doc.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f21c30657ffa438b89c823713e2922036f573da5e26a533521ee1fe22eaa98b2",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/transport/health.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "8ea02aba2efcd5529aaabc098c250a4428af9e54cc6b316f48a0cb0df22112df",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/transport/health_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "6c880f53b67cf0ff668539f2784290043d69b704c2247cce19752754ac972d21",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/transport/hostile_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "6e59e6c68d30262e84d9948c4eb108e369d5792d6151b0ca732dc4cf861aac47",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/workers/delivery.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "968f389f25d214cb9b934b7474e9eace3a3f9ab6f6590a037a2de478d3e76e2a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/workers/delivery_integration_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f8b68f4993288873528a42f00408a88bbeb38229666e89b470ea0605d040f43c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/workers/delivery_step8_hostile_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3c91af31c2b309dc473412b2ae3728d4e8c624755432ea51ff2087310ad93129",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/workers/delivery_step8_integration_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "227cdc0b46551945aa0fb56e38e60b10e8bda08a66a60baf57dfc24b706e333f",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/workers/delivery_test.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "46775ae14bc984d4c6499e63ccf6528c180b4f117c44ac5bd72e8447a5e8b892",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/internal/workers/runner.go",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "39594a66619abf12b085d95a8f5a548956ac0fb536deb57285545466eb497a04",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/scripts/build.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "5e4fa3730437638eef6912b83bc91a2feb73011e225a5a806a665aa0b052e6cb",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/scripts/check.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f91e20b263f02d95889205e7f0ea883ce12bc99fd4fb912f910a8b0429bf2966",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/scripts/test-authenticated-transport-runtime.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "7c637342f845d57d73c6eb69b58af672b5e2810ae41c5247076112ee79b0769d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/scripts/test-authenticated-transport.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b90dc4e1fff7618cdf77e9d72403df405f36f4fe70b920617f65e106fed0db4c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/scripts/test-delivery-workers-runtime.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "9f6cc9a48000c38988c4db7c2e90dd4327fcc7b6a6ec2ef5cdd54338b57e80c2",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/scripts/test-delivery-workers.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3e7275dc33449fa009dd5954fe92d4366f4a7eabc8f72d2fab5f9882d6736514",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/scripts/test-foundation-adapter-runtime.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "c774002f4d1652357c7ab234a9c73d61a850ee8036df210866f2c2aae1077d34",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/scripts/test-foundation-adapter.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "ab2c6c0db9e47bd38802b6dad6bb7c1ee48bfc783146f790003478acaae8916c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/scripts/test-phase6-adversarial-runtime.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3732a52d888a7cd720c761cba108747c48cb4195442f463a78daa7e8156e6116",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/scripts/test-phase6-adversarial.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "7007f570046b84d39a1d2f374f2d207dedeb19080a1ab1dce3291cb2de2a9372",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/scripts/test-process-host-runtime.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f09e0398839c09cbd76f728c7c59ac0ded04afaefa80e7f99beb8ce433002d31",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/scripts/test-process-host.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "e2d0f2612bc61085f8c377eba3a191d988ff142be85196cf6ed957e2c90f1721",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/scripts/test-runtime.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "cbd7b9a0ba73d1e539dbf108123b18cb507b5520e4f6a722a38571a66b08526f",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/testdata/phase6-step5/authorization-policy-binding-fixtures.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "1ea086213be84ad6d8d8b1b276e9a72538be10a9cf0118adffecf4d73937a678",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/testdata/phase6-step7/delivery-worker-fixtures.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "cf4a1624d60f42d902470e41824cebd292a62ffb9a99d19855eeb9b6bc116f3c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "go/platform/testdata/phase6-step8/hostile-delivery-fixtures.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "324fc3d5562398b310ee36acc26a28adccf51dfb5fc2ceb087ec3eff5d0f2959",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/deployment/manifests/deployment.manifest",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "5e26530c0861b61fc93cfc4c3e97909298be08cfa9ec50c899498130714a7009",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "sql/deployment/migrations/900_postgresql_role_topology_and_membership.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "11a17345b13a44e99221b4e63b4d1dd5c5568db2bb93092d45302d649a76d254",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/deployment/migrations/910_database_schema_and_object_ownership.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "0119a6faf3de8e796a4e5a4cc14b0bac36b86c05d6518bde1639032fcfe0d2e2",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/deployment/migrations/920_least_privileged_runtime_grants_and_controlled_service_apis.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "7da6fc63e29d4857b191c442f93c87287c8b06b1b2898872e93d9d23ef7e795a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/deployment/migrations/930_investigator_audit_and_validation_review_surfaces.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "912e660bacd60782e598c5500daa4dcaf5f445728dc4a2cbe77a49520bf4a759",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/deployment/migrations/940_break_glass_and_credential_lifecycle.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "178c0e245b061cf712bba24d961514c91564ab21c24b8d2893f7a28366d36b2f",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/deployment/migrations/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a4c5620fc25080bfd157559c00bc532639ec8aeb9d10c52dc5d0ab24495c6e71",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/deployment/scripts/apply_deployment.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "2dece9cb7aff1f77f5f91c48c29f5378bf0028344ce0417ce506f080b4c3638b",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/manifests/foundation.manifest",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "9a34d6a06078086ce8e0eef9b665f0d998432a5cb652fdd576f9237bb528b8bf",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/000_platform_initialization.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "83fe22620a35bc7b65ea6bde1d41c123fd1ea10b2c536e9e881944096e224310",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/010_cryptographic_and_device_trust.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "12b5b8e236bd7fc3f74d0c0820ac9e33edb9d5514fd62c0aefa4eb26ce1db60e",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/020_identity.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "0bc676d42ab7f8a122e6f586251f492b775f3d7e2f49cc51b7adab9858a6f6e6",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/025_identity_lifecycle.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "e97b39a0cc0b66eb0779586a021dbd560532052795abe56d07adba030e8d1fe2",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/030_organizations_and_governed_scopes.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "bb278dc6f3e6f26be49c7c6196a5d12f7273009949c19e419334fefa1d7fe807",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/035_platform_services_and_configuration.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "4813f636593aa15698de38336ba99e9fb40c4e77c9a3286f5182ca59860ac50c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/040_service_participation_and_federation.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "9116705a202fd5be8cc509efdd42440dbd7d07ec036143085215979ceccfd9b6",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/045_attestations_and_access_eligibility.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "93148c381f1710c48bbe67ea1655addbf64003973d7c605b7be8adb24473518e",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/050_approval_framework.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "7b7fb1fd938ee7a8cb6ad27242835579ffc1231d57d603883d14b23fe43b8824",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/055_authority_purpose_and_authorization_policy.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "8195a7465531f61e417e8d57bb588150ff1171e1f851685e44a41d6c372d61c6",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/060_sessions.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "2daa9ebf4fc509d92086bfd7c10d25a9fcec6751244bf94b73b3ad98abe65947",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/065_authorization_leases.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "6af85641b7f99e1343b92791a51357af952b44187b8e707c76c7ecd6f5537def",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/070_postgresql_authentication_assertion_gate.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "081d13374c974a8b74b298f225de8042b62b6a319db75d7dc6220e104fb0273a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/072_postgresql_session_control.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "c62a96965c9ed8782ec74f03dd1dd29afca032452f78f198c139a3f087a13572",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/075_controlled_authorization_api.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "255212099cfdce7b3d7c3f6b7538e28b699bbf1e85d55600db6521e62965ca33",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/080_decision_record_repository.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "322ae827984f536837c96014b62edb22be47bfce70e6e0668985c3f7654302e6",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/081_postgresql_authorization_decision_and_lease_issuance.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3b8ccb3874d412cb255ca1955f8d3f51b4c88e3fffefa9750d4c8fd941559bba",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/082_data_classification_and_governance.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a89807f9310415b55cc93058a03ff81aefd93fc23a955c58f5690eb93ff0ff21",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/083_postgresql_approval_independence_and_separation_of_duties.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "6f7bcdccaff468a6642fea036319b2bc982563dbdc0f87033d0ce6699bb89f6d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/084_lifecycle_and_historical_lineage.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "60823bdd14084d1e4651f3813bcb5e3f09417f9a84e84295cb263c9240aff031",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/086_governed_documents_and_policy_versions.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "8f6444cf62dbb46032e89c488196a61d5097b8d99174c9412df97e2b4da9729c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/087_common_control_catalog.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "7e92269de78ed7ef0184df2178d86ed7f06553d4193e0076099dd9be794f5454",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/088_compliance_profiles_and_requirement_mappings.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "ed847f962980cfa0279264e3cff1dbc922e67475f38b3eb0ffedf14f8100e9db",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/089_control_implementations_and_assurance_artifacts.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "59fcd91480d440ce38590753bcc858419f0356075ec226af35a9f853ebd5186c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/090_assessments_findings_remediation_exceptions_and_risk.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "8eda526bf6c24ac10d77f2d949d91b05cef6d65691737c4c6674c7ff3c3d4d60",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/091_threat_records_and_abuse_case_mappings.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "1163ec687d20520ae8b768c09aa33b4a201dc5df4d3d3acd60e80c532057ff0f",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/092_resilience_availability_recovery_and_continuity.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "9b725da0ab901c6f376346fcf178228c43778e7bf5e6e5e8316329fc66c53372",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/093_workload_registry_performance_budgets_and_resource_governance.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "c032a02bf9f2f806d8753eecfa118c6e36204a4ecca472894ddb7f4ea2263d63",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/094_client_and_deployment_performance_profiles.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "70f3e37b1f1e452f69640b3d428e321006f94392381902715b98b32a7ce02ea7",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/095_observability_health_and_operational_telemetry.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "831a9bcf368c3f7754683cb9776508511e1f9db5d750f99c7a53aacf0d5298d5",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/096_monitoring_subscriptions_and_delivery_state.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "fa414a073266cd6305b0ce57d2b96409e5dd8f0d68e3dadcf623ba7037e11610",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/097_external_integration_outbox.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "ae1adda200ab213a5cf48061da66498ad56176db0fe0d821fc3b01f419578cf7",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/098_security_boundaries_and_role_separation.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "2020cbc2c786541e416fa41e2573a7a882c66f1617732a0b71dde60f2e77a2af",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/migrations/foundation/099_foundation_validation.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a07eb2100ae93a28818695c86ca510e53fe5d4b067809458673fb56ae922e424",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/scripts/apply_foundation.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "6e1a204616db5dc50459f7167d0e99486544fc6df2a8c79e496c630e371985f7",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "sql/schema/scripts/validate_foundation.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "285cb172143ded4b30046a6cc7c010b8a45d10a20b80545d1291d01a25ede22d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/INSTALL.txt",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "435714a0c8200ad5f9a0b0959d60e7a3df55797edd2caa11dfb1733c1638d749",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "test-framework/Makefile",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "b338a5a2535faf8cc34cfe1ab566107a9de04b18515e23379e1853ca5c29423d",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "test-framework/sql/deployment/scripts/test_phase5_step2_role_topology.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "67012aea04c83dd0b0bfbd33ca452704f287d31aca634a6f5f039c7d3a06f2e0",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/deployment/scripts/test_phase5_step3_ownership_and_default_privileges.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "d8ba81cf1b58c5de77d5e965e8f0333bc2ff455c512ffa3cd7cc8e17138900e7",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/deployment/scripts/test_phase5_step4_runtime_privileges.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "172b7d9836b5ba80a9fde4433f0f156898f2c9e2c3e37f1f35fc2e559d6f3cf3",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/deployment/scripts/test_phase5_step5_review_and_validation_roles.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b2400ae1bd57e01c413fc1d792f5f09a29e794a78dfd0cbe9bd667ecf9895962",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/deployment/scripts/test_phase5_step6_break_glass_and_credential_lifecycle.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "dd9317b3f46c543e7222e17fa46d4355115ecde97715eca6b0713a7485e5ae9a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/deployment/scripts/test_phase5_step7_hostile_condition_and_role_races.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "65ecefe31bb73b98ac7bfc86e25364bc52e9ae41c85e7f4aa8799a9cccc2ec1d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/schema/scripts/test_foundation.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3ee1b794c62238b60b70a19c834fc1efe0bbfb0916e2a5b2315d4acb70e94765",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/schema/scripts/test_foundation_with_resources.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "2eef48f8fa081d12648d8095f06fd1f23db187501d22dfc4e50a4752302f1f50",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/test-results/.gitignore",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "21f51fb1ac0407e5c79efcdd4d95f0f30760b2048ccec9c9c7e777d1e0e3a631",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/100_authentication_assertion_single_use.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "16492dda9082abd9378bf1b37d0263a04867ac447228ce649df60cc343dd8a5d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/110_session_establishment_single_use.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f9cafb775b7c6e10f6156473dd6c8b0a518384f9fbf181c713e4cd699354448d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/120_session_step_up_single_use.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "2d5e4118477cd68a4d073d45780420a59e350c69b5011a9f2426158918399388",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/130_session_terminal_transition_race.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "c7e26988f13407e3fd00cdda3abd1a9cd283fb648d963033e5fe82eae3f2be75",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/140_authorization_decision_finalization_race.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "8620d8e56d9701804999bae16c8d4f4f15905c5a36845ef6da1501bd7d81878c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/150_authorization_lease_issuance_race.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b7fb4992a1f9776454cac8b1c0ac480c81d05e1e4aa3a3577a31d0e174384d54",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/160_authorization_lease_single_use_race.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "95a87277bf16fb1e2a0ee77d2190ab36f55920bc053edb69c4923f79a1c3fad6",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/170_authorization_lease_limited_use_race.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "641b567d1273361f4ce7804d4b60285e22df19a4626d61f1320acd22a72e1938",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/180_authorization_lease_terminal_transition_race.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b5ee146f1bef35f9f8656f1c66f4a249fbfa0c2eaaf78f73e9db5a5a2cbd53e8",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/190_approval_duplicate_actor_race.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "85e44285a7a8da37456f825305a7a2b44d543b84a728bbba0f5dc940d2e20780",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/200_approval_stage_finalized_evaluation_race.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "656365405797b8355290d2476eda92f45e8b9a9ca85181c5687d6663876a5efd",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/210_approval_request_finalization_race.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "235b11d3b9a6db7fc8fe750d0b670e7d522eabee1d3306aa361922a27f02d21c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/220_approval_last_approval_finalization_race.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "ccbbf88c908c7c5722e8d87b9eec16faf90dcbb207eb2d780d0e08740ba12948",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/230_approval_withdrawal_finalization_race.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "55d141a9aaa27786a79ed2b4911ae6a0290381c84b3bc03961faa0e7d18e67ec",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/240_approval_authority_revocation_race.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "377c72d92909ecbf0928fae0f69fbbb47f41d19c75cb7761291401dcdb339ddb",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/250_approval_reciprocal_approval_race.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "bd9a66e680f0948e01084527d55143733ffca7e5b3fb1715c6a71f98b216fe0e",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/support/phase3_authorization_concurrency_fixture.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "eeaa0fb7c52b209f78691d17685fb107e1f5691bfc7234dd2b667c33f9a8d84b",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/concurrency/support/phase4_step7_approval_concurrency_fixture.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "497a65e0ad4c882c6919e2daa1818e7f8c06d838f9b6aedefe8630ad6dad11a3",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation-concurrency-tests.manifest",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "e7cfa7d5bfb36312529a9df1308cf1a6201cd5014f6e08b9ae24a07ab61347b5",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation-tests.manifest",
+      "state": "LICENSE_HEADER_UNSUPPORTED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "unsupported",
+      "sha256": "8e93bb4079871c40fa5d798fbf448f08269ff1e1b7a40b04793ce5b589893217",
+      "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/010_foundation_smoke.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f8a1a7273057af3d63b8b4180fb6ecd3f1233432f490763259c23ae42407bc89",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/020_schema_security.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b7714d22d1eaf8a7f61372f3f2f7b18ab293931473726dc0c28151c321d7cb6b",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/030_function_security.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "13810ec01150047e463576282a1c5e838b3d8f98f0436e3926ea8ff30c968eb7",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/040_migration_registry_behavior.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a9a30fad34feec8dfd09c0af9dc8b64e46b06697aecec00cda2285632aa38f2e",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/050_catalog_integrity.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "d58436419e00b06226502dd9ecbaaa770669484cddb4ac02e6a2fc0dc2d82fe1",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/060_validation_views.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3a7651c0fd04cd50c024e229cb80d216c93f74e12d89e9ab1ae7d452d020d79c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/070_inventory_report.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "dc073c86254091196f58db95ededca1525943412abb304ad2929038f72e7653e",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/080_foundation_baseline_integrity.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "2f42a5cc61819820b42e5dec527a39c0d1e3ae742073e6681f6f06e62a4b91bc",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/090_authentication_assertion_behavior.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "5b786fd609bc373b792aa0c4d0e13dc36bef6a9d4bd581e26e81de2b286e41f9",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/100_authentication_assertion_phase1_behavior.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "996e4b0742053b64165ea0526072c637e1503679ec0d640be5d7bcb8ca446e9f",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/110_session_establishment_and_step_up_behavior.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "e875f46a3cb01343bafa9aef167983c34d24f5009675ab7b3d1ac9400dcd6484",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/120_session_lifecycle_behavior.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "4b36e22fe2e0440c436796cfae62b9b171108c74f34ebea2617dcd26ff30fb7b",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/130_authorization_decision_and_lease_structure.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b0549e8b48307d121289e3ace064354a621ea654ed15bc2b29e110dca7de060a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/140_authorization_policy_selection_and_decision_finalization.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "d705b074f8f828abd0a1c49095745b12ba824fa6177298046e02b14986b15a99",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/150_authorization_lease_issuance_and_use.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "1495ba7f8aea6c0d8df347df1165b334840b93e7b2f679c1005fb11102bfa62c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/160_authorization_lease_fail_closed_behavior.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "c33245d1653e1cc08555c8c2ece4c083858dc2f684cc587c4bab8bafb4214e02",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/170_approval_independence_and_separation_of_duties_structure.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f205e0e91ce2010356057307b0aa765de3733f9409af25f1d837e62acf985251",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/180_controlled_approval_action_recording.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "63d155d75a921163abf28f47017a4c67b344a41d4e792becfd853068c2d8603e",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/190_approval_independence_enforcement.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "5e318626dd9996d7e1397cec827c0a76d9799f28e65f7b5e45a5893cf37f8d8e",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/200_incompatible_authority_and_duty_conflict_enforcement.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "d7d6ec29f1d4b8df94f34b8473a0beeb0a7a13586949fb02cae32ea5bb305256",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/foundation/210_approval_stage_satisfaction_and_finalization.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "c71cafab91c7bcbe6a9046b352d8f18d206e96acb3336d643c9d59d429a738c8",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "test-framework/sql/tests/framework/000_test_framework.sql",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "5fd6a8845967c93e7343a665666e666ae72b73d3cf2cd1efc6071e9b922a3055",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3cc5ad24c4d7e11f726dbd99cff29ce3267900c83ef2cc77cb7bd90e2f5b9f11",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "9fe6e71aaded412bc8d024ea129829fa5ebb2572186965bd53507f9510123f2f",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/check-go-format",
+      "state": "LICENSE_GENERATED",
+      "classification": "generated",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "cb249facf5240e352da5f9933fd3d53f9106fb9a3612d412bb5473b9b113f81c",
+      "rationale": "This deterministic generated file inherits the declared repository license and is hash-bound to this reviewed content."
+    },
+    {
+      "path": "tools/validation/check_current_domain_neutrality.py",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "0383e33a22321118278031299acb18047046c50eae0fe94ecc08a25074bf419b",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/check_project_status.py",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "4c41b69adb8ec6e8a89e75f6e54d09c35287893f0f9f42aa01ef91e61e5cdb8c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/check_project_status.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "89b26ff9e3e37778ce89b07c7ab06360304e1d4a38b14d7df40e4c47532e1a03",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/check_repository_sync.py",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b45cd68c967243faf6fbef99267060f4804dba174e53815fb3e6f1dc7331d66e",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/check_repository_sync.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f33d19907d23610ad60f518bad55216cf4ffac0d117d25e9ebd9e48a82ebdd5a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/README.md",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "25c0b2e94ec3020723ce5a188b946948abbf62c90c18f63f912cd02ffb1f5f4d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase2_step3.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "4ad63e7467d9903e3494b2224539d30b6bbc34800669b94cd9aacc36e2b5366f",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase2_step4.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "5fc47d5927f5b7e5e18212f32f90f5dd34ae6a5be681aea6ec63ef7a383f7c5d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase2_step5.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f22ea7619d9c3ef7583ca68d384865661f1ec48ebbfdcb8365aad9397a45cbe1",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase2_step6.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3ea77c46bb9bf5e3a14b06288db50580d10b483ae8bac7705457ee198b55d9dc",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase3_step1.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "506b028bef3d3130cab4d5ebce64af0a6a8a58587443ed94ef1e35426623b177",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase3_step2.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "1321db9646b383a0a89c6d4bfc188dfcb42b292903f4ae3b250cc17600163c7a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase3_step3.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "050723f2fefd5accd9b7eebd322b85a06d3ea2d98225b9178fbfb65f50e83a56",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase3_step4.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "ae0951aae1639892343c87104d89d7141eb9a7a77a0da0c22b6ec936679fcdc7",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase3_step5.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "7d2d8ef1e8f02585b262cbd63500ebdd1179b5523f4a75607ff74ae1bfcd048a",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase3_step6.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "0f3a96a6f1860d272a2da1d9bb1a6c01dacb569fc7294421bc4100eda557a2db",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase3_step7.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "9fb07685aca52165a75d15730c6a7394483e1b5d5af194f5def5941960eeb22f",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase4_step1.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "430aa5f372505e9a6251597248f6eff6e74c5be0346a0251456964331af41f8f",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase4_step2.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "9fdddc6a5414ecb59f718e5e457ecfe2d1aa5a0750165eeddd95689d956e4a6f",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase4_step3.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "31d4770efc94c9361dd3d529c5b7000dc0818172eb26917fa5c14b2fc2703af3",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase4_step4.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "b12a35636ad036749f12fe59b6f3b1ac0720ba968999b07febbc65c2643be243",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase4_step5.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "a4af6fee4b0ca02997fa80469394dcd9887ae2a36860f13af186be08e2c30fc7",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase4_step6.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "05535f395be2dc5cc43739441569a93107637c9972f7367066131206f5fb2368",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase4_step7.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "2aa57a41faba34074c138e77e8f1136ac90611a5ce9eeacbab6edb13894d6236",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase4_step8.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "e4d03dcf2d01721ccebe013239512feac6064b5ac562710b3077e25ae04a5ee0",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase5_step1.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "3e19ccadfc36cb9d888dfebf96b09c5240b2bc5837378613b47f800981c39079",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase5_step2.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "6a0244743630d2e9531197d4942d871753ecf0cf1a1c2803d2ffc9a243f92fc4",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase5_step3.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "27e0042b16176446b69c44ec5694adc7ecb7aa16561588068554b3e80ae5e8dc",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase5_step4.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "bb08370f12dface8166fc16d68b86af145ccb4bf4ffc90dbaa05acbd984edd9e",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase5_step5.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "433d205cc9d7f05d5b878b92cdecce7743b9f2095afb7ba970d1a99580db9c04",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase5_step6.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "ec7a072642a2dea5bbfeaff0162429cfe8b33316f3bb9f25ac2c03a20997a561",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase5_step7.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "01b8090045b702c447c700dbd58e0c3c9be8b6d9a6b1141d0d70fbd8d408c59c",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase5_step8.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "58804b5a8c01840abef1bc1d7b26cf1e8749cbe0f57464caf3daaca9f2955688",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase6_step1.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "7c8d99d1aefad952ad2a19588f559da69c6b9fe8c1d12d8c596fdc425ee5ee65",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase6_step2.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "2ed1d7c4b4eab210c45cd64786ea12952bcfcfcef19afb3f82e5537e9191877d",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase6_step3.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "43801b9d3665924010db806927b1f146cd3e433ca25cbe58d13fe565342d3eed",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase6_step4.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "0cfb2614730a52071fe81bbae7e10225442c4a74939bfcbeadcc811c58b7bc6e",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase6_step5.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "1a70c1d6d3891076d71ed8109fe1091628ce312f09216820b3a486d024ecf093",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase6_step6.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "5ac01e98fa737ac24ed28ad83e1dd82da1ae515012d4cb206d9ad3775c359379",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase6_step7.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "f111aa1af9f1e101465a7f896bd1f2729bb0477bb5dcfa188475a0bf61d38c47",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/phase-gates/validate_phase6_step8.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "cccc3535a289505e4d4cb600e6b654f3187949bd981cd92c956ce6175390e7a5",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/validate_foundation_database_parity.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "21890d0e00a375ae7bd95f2736c8cb4c35d24b02df856757917143df379e4ed1",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    },
+    {
+      "path": "tools/validation/validate_foundation_migration_timeouts.sh",
+      "state": "LICENSE_INHERITED",
+      "classification": "project-owned",
+      "license": "BSD-3-Clause",
+      "header": "not-required",
+      "sha256": "bfebc38bc3e6130968a026d7a8321d9af947f9d50b2238d9e29b3c417064ba53",
+      "rationale": "Human review confirms this existing header-capable project-owned file inherits the declared BSD-3-Clause repository license without rewriting its hash-bound historical content."
+    }
+  ]
+}

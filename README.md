@@ -1161,3 +1161,10 @@ record.
 
 DNP retains the domain-neutral Platform Foundation. Module implementation,
 validation, and acceptance occur in Module Families.
+
+## License
+
+Copyright (c) 2026 John Joseph Wood.
+
+This project is licensed under the BSD 3-Clause License.
+See [LICENSE](LICENSE) for the complete license terms.

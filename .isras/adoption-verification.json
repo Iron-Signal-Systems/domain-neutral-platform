@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "authority": "testing-candidate",
+  "testing_candidate": "T.26.08.18",
+  "intended_stable_version": "26.08.18",
+  "source_repository": "github.com/Iron-Signal-Systems/engineering-standards",
+  "source_commit": "7debf5becf4e61ffc56d16a58bd34e26e0c46ad0",
+  "release_tag": "NOT_APPLICABLE",
+  "published_release": false,
+  "stable_assets": false,
+  "status": "NO_ACCEPTED_AUTHORITY_CREATED"
+}
