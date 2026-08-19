@@ -4,7 +4,7 @@
   "testing_candidate": "T.26.08.18",
   "intended_stable_version": "26.08.18",
   "source_repository": "github.com/Iron-Signal-Systems/engineering-standards",
-  "source_commit": "da97ff8af06d817232eb493ea610cac7077ad9a2",
+  "source_commit": "6102f3a4c2e011eb06edcf357bfc021bef256dd5",
   "release_tag": "NOT_APPLICABLE",
   "published_release": false,
   "stable_assets": false,

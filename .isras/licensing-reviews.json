@@ -8,7 +8,7 @@
       "classification": "generated",
       "license": "BSD-3-Clause",
       "header": "not-required",
-      "sha256": "4a58e3542232dd63f6cb3bae5af61c21e1d96aea877ddf652c4015b1821e7fac",
+      "sha256": "36437e0816ecc9d30cc1878520a91dbdadadf0023202b0d21679aab03616103f",
       "rationale": "This deterministic generated file inherits the declared repository license and is hash-bound to this reviewed content."
     },
     {
@@ -26,7 +26,7 @@
       "classification": "generated",
       "license": "BSD-3-Clause",
       "header": "not-required",
-      "sha256": "27320f80070ffaec20bcf9e3969684c4846cb5270e96b3e0bc08ba2d9b76b0a2",
+      "sha256": "f577fde849b67486d7c6ec808b2e95e56b6143d84bb06f02efc0a57c3bfef214",
       "rationale": "This deterministic generated file inherits the declared repository license and is hash-bound to this reviewed content."
     },
     {
@@ -35,7 +35,7 @@
       "classification": "project-owned",
       "license": "BSD-3-Clause",
       "header": "unsupported",
-      "sha256": "3fe54deed634ce086b589e65865e811e68a23ee36994b2120c8a2b1d13babd09",
+      "sha256": "d7a010957a5beb2ae4a8fa976620090b4cb92e3132a835b1c75d6375df081aa5",
       "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
     },
     {
@@ -44,7 +44,7 @@
       "classification": "project-owned",
       "license": "BSD-3-Clause",
       "header": "unsupported",
-      "sha256": "5f35c2ef51fd6eb0581bdd63a4592c4a339b3d0ca908fd88c5a5e058debcd57c",
+      "sha256": "733bd612b75cdd7b2d1f45143f62aae9e443715676ccf8386fb676cde8c725fe",
       "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
     },
     {
@@ -53,7 +53,7 @@
       "classification": "project-owned",
       "license": "BSD-3-Clause",
       "header": "unsupported",
-      "sha256": "c904048fb8668dc08c40939584b3500a866394d6c134a836f7c58d97483eb00d",
+      "sha256": "e249ab9413ad18b9f967c001ffc34efc26918083b793c49666db5033d6e30cbf",
       "rationale": "This reviewed project-owned format cannot safely carry the repository source header and inherits the declared repository license."
     },
     {

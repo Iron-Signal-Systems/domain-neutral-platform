@@ -1,6 +1,6 @@
 {
   "schema_version": "26.08.18",
-  "project_declaration_sha256": "5f35c2ef51fd6eb0581bdd63a4592c4a339b3d0ca908fd88c5a5e058debcd57c",
+  "project_declaration_sha256": "733bd612b75cdd7b2d1f45143f62aae9e443715676ccf8386fb676cde8c725fe",
   "domains": [
     {
       "domain": "testing",
@@ -22,7 +22,7 @@
         "rationale": "The current ISRAS project declaration contains no adversarial typed operation. Existing DNP hostile-test assets are outside this adoption's typed operation boundary and are not claimed by this plan.",
         "owner": "Iron-Signal-Systems/domain-neutral-platform",
         "review_by": "2027-08-17",
-        "reviewed_project_declaration_sha256": "5f35c2ef51fd6eb0581bdd63a4592c4a339b3d0ca908fd88c5a5e058debcd57c"
+        "reviewed_project_declaration_sha256": "733bd612b75cdd7b2d1f45143f62aae9e443715676ccf8386fb676cde8c725fe"
       }
     },
     {
@@ -68,7 +68,7 @@
         "rationale": "The current ISRAS declaration does not establish a PostgreSQL typed assurance profile, so database testing is not claimed as a separate classification here.",
         "owner": "Iron-Signal-Systems/domain-neutral-platform",
         "review_by": "2027-08-17",
-        "reviewed_project_declaration_sha256": "5f35c2ef51fd6eb0581bdd63a4592c4a339b3d0ca908fd88c5a5e058debcd57c"
+        "reviewed_project_declaration_sha256": "733bd612b75cdd7b2d1f45143f62aae9e443715676ccf8386fb676cde8c725fe"
       }
     },
     {
@@ -79,7 +79,7 @@
         "rationale": "The current typed adoption has no separately governed contract-test operation. Contract behavior exercised by Go tests is not claimed as a distinct classification.",
         "owner": "Iron-Signal-Systems/domain-neutral-platform",
         "review_by": "2027-08-17",
-        "reviewed_project_declaration_sha256": "5f35c2ef51fd6eb0581bdd63a4592c4a339b3d0ca908fd88c5a5e058debcd57c"
+        "reviewed_project_declaration_sha256": "733bd612b75cdd7b2d1f45143f62aae9e443715676ccf8386fb676cde8c725fe"
       }
     },
     {
@@ -105,7 +105,7 @@
         "rationale": "The current repository and Go typed adoption boundary does not declare a governed fuzz-testing operation.",
         "owner": "Iron-Signal-Systems/domain-neutral-platform",
         "review_by": "2027-08-17",
-        "reviewed_project_declaration_sha256": "5f35c2ef51fd6eb0581bdd63a4592c4a339b3d0ca908fd88c5a5e058debcd57c"
+        "reviewed_project_declaration_sha256": "733bd612b75cdd7b2d1f45143f62aae9e443715676ccf8386fb676cde8c725fe"
       }
     },
     {
@@ -116,7 +116,7 @@
         "rationale": "The current repository and Go typed adoption boundary does not declare a governed end-to-end test operation.",
         "owner": "Iron-Signal-Systems/domain-neutral-platform",
         "review_by": "2027-08-17",
-        "reviewed_project_declaration_sha256": "5f35c2ef51fd6eb0581bdd63a4592c4a339b3d0ca908fd88c5a5e058debcd57c"
+        "reviewed_project_declaration_sha256": "733bd612b75cdd7b2d1f45143f62aae9e443715676ccf8386fb676cde8c725fe"
       }
     },
     {
@@ -127,7 +127,7 @@
         "rationale": "The current repository and Go typed adoption boundary does not declare a separately governed recovery-test operation.",
         "owner": "Iron-Signal-Systems/domain-neutral-platform",
         "review_by": "2027-08-17",
-        "reviewed_project_declaration_sha256": "5f35c2ef51fd6eb0581bdd63a4592c4a339b3d0ca908fd88c5a5e058debcd57c"
+        "reviewed_project_declaration_sha256": "733bd612b75cdd7b2d1f45143f62aae9e443715676ccf8386fb676cde8c725fe"
       }
     },
     {
@@ -138,7 +138,7 @@
         "rationale": "The current repository and Go typed adoption boundary does not declare a separately governed platform-test operation.",
         "owner": "Iron-Signal-Systems/domain-neutral-platform",
         "review_by": "2027-08-17",
-        "reviewed_project_declaration_sha256": "5f35c2ef51fd6eb0581bdd63a4592c4a339b3d0ca908fd88c5a5e058debcd57c"
+        "reviewed_project_declaration_sha256": "733bd612b75cdd7b2d1f45143f62aae9e443715676ccf8386fb676cde8c725fe"
       }
     },
     {
@@ -149,7 +149,7 @@
         "rationale": "The current repository and Go typed adoption boundary does not declare a separately governed resource-test operation.",
         "owner": "Iron-Signal-Systems/domain-neutral-platform",
         "review_by": "2027-08-17",
-        "reviewed_project_declaration_sha256": "5f35c2ef51fd6eb0581bdd63a4592c4a339b3d0ca908fd88c5a5e058debcd57c"
+        "reviewed_project_declaration_sha256": "733bd612b75cdd7b2d1f45143f62aae9e443715676ccf8386fb676cde8c725fe"
       }
     }
   ],
